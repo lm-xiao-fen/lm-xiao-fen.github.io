@@ -1,5 +1,5 @@
-title: "xf_blog"    
-description: "jekyll blog"  
+title: "xf_blog"
+description: "jekyll blog"
 baseurl: ""
 url: "https://lm-xiao-fen.github.io"
-remote_theme: pages-themes/primer@v0.6.0  
+remote_theme: pages-themes/primer@v0.6.0
