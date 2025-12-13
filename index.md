@@ -1,6 +1,6 @@
 ---
 layout: default
-title: xf blog  
+title: xf_blog      
 ---
 
 # 👋 Hi, I'm lm-xiao-fen  
