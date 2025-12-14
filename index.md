@@ -2,11 +2,12 @@
 layout: default
 title: xf_blog
 ---
+### [xf_blog](/)  
 
 # Hi, I'm lm-xiao-fen
 
-欢迎来到我的个人主页。  
-这里记录我在 **Web 开发 / Cloudflare / GitHub / UP 主 / YouTuber** 方面的内容。
+欢迎来到我的个人主页
+这里记录我在 **Web 开发 / Cloudflare / GitHub / UP 主 / YouTuber** 方面的内容
 
 [副站](https://lm-xiao-fen.github.io/my-web/index.html)    
 
