@@ -51,6 +51,4 @@ title: xf_blog
 - [email: G114514g@yeah.net](mailto:G114514g@yeah.net)
 - [YouTube](https://youtube.com/@lm-xiao-fen)
 
-<p align="center">        
-  <p><a href="https://icp.we2050.com/id.php?keyword=20259950" target="_blank"> <img src="https://icp.we2050.com/logo.png" width="20" height="20" style="vertical-align: middle; margin-right: 5px;">团ICP备20259950号</a></p>             
-</p>    
+<p><a href="https://icp.we2050.com/id.php?keyword=20259950" target="_blank"> <img src="https://icp.we2050.com/logo.png" width="20" height="20" style="vertical-align: middle; margin-right: 5px;">团ICP备20259950号</a></p>
