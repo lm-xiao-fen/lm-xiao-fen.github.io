@@ -14,31 +14,10 @@ title: xf_blog
 ---
 
 ## Blog  
-
-<ul class="list-style-none pl-0">
-  {% for post in site.posts %}
-    <li class="mb-4">
-      <div class="mb-1">
-        <a class="link-gray-dark h3" href="{{ post.url }}">
-          {{ post.title }}
-        </a>
-      </div>
-      <div class="text-small color-fg-muted mb-1">
-        {{ post.date | date: "%Y-%m-%d" }}
-      </div>  
-      {% if post.excerpt %}  
-      <div class="text-small color-fg-muted">
-        {{ post.excerpt | strip_html | truncate: 80 }}    
-      </div>
-      {% endif %}
-    </li>    
-  {% endfor %}  
-</ul>
-{% if site.posts.size == 0 %}
-<p class="color-fg-muted">      
-  还没有文章，敬请期待
-</p>
-{% endif %}
+{% for post in site.posts limit:5 %}
+- **[{{ post.title }}]({{ post.url }})** 
+  <small>{{ post.date | date: "%Y-%m-%d" }}</small>
+{% endfor %}   
 
 ---
 
