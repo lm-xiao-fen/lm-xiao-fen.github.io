@@ -23,11 +23,9 @@ title: xf_blog
           {{ post.title }}
         </a>
       </div>
-
       <div class="text-small color-fg-muted mb-1">
         {{ post.date | date: "%Y-%m-%d" }}
       </div>  
-
       {% if post.excerpt %}  
       <div class="text-small color-fg-muted">
         {{ post.excerpt | strip_html | truncate: 80 }}    
@@ -36,7 +34,6 @@ title: xf_blog
     </li>    
   {% endfor %}  
 </ul>
-
 {% if site.posts.size == 0 %}
 <p class="color-fg-muted">      
   还没有文章，敬请期待
@@ -50,5 +47,6 @@ title: xf_blog
 - [bilibili](https://space.bilibili.com/3494372658121066)
 - [email: G114514g@yeah.net](mailto:G114514g@yeah.net)
 - [YouTube](https://youtube.com/@lm-xiao-fen)
-
-<p><a href="https://icp.we2050.com/id.php?keyword=20259950" target="_blank"> <img src="https://icp.we2050.com/logo.png" width="20" height="20" style="vertical-align: middle; margin-right: 5px;">团ICP备20259950号</a></p>
+<small>
+  <a href="https://icp.we2050.com/id.php?keyword=20259950" target="_blank"> <img src="https://icp.we2050.com/logo.png" width="20" height="20" style="vertical-align: middle; margin-right: 5px;">团ICP备20259950号</a>
+</small>
