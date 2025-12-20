@@ -50,3 +50,8 @@ RECORD_KV
 
 ## 结尾说点话
 给[lm-xiao-fen/VICP](https://github.com/lm-xiao-fen/VICP)一个star吧
+
+### 联系我
+[bilibili](https://space.bilibili.com/3494372658121066/)
+[email:G114514g@yeah.net](mailto:G114514g@yeah.net)
+[YouTube](https://youtobe.com/@lm-xiao-fen)
