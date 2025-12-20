@@ -1,7 +1,7 @@
 ---
-title: "Cloudflare Workers + KV 数据库 = 一个虚拟备案系统"      
-date: 2025-12-20
 layout: post
+title: "Cloudflare Workers + KV 数据库 = 一个虚拟备案系统"
+date: 2025-12-20
 ---
 
 # cloudflare workers + kv 数据库 = 一个虚拟备案系统
