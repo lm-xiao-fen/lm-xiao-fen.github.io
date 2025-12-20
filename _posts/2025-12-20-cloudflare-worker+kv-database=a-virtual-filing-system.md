@@ -1,8 +1,9 @@
 ---
-title: "Cloudflare Workers + KV 数据库 = 一个虚拟备案系统"
+title: "Cloudflare Workers + KV 数据库 = 一个虚拟备案系统"      
 date: 2025-12-20
-layout post
+layout: post
 ---
+
 # cloudflare workers + kv 数据库 = 一个虚拟备案系统
 
 我闲的78疼时，我就想做个玩具玩玩 VICP虚拟备案系统应运而生
