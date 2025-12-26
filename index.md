@@ -26,4 +26,4 @@ title: xf_blog
 
 ---
 
-<p>VICP-T6JGPJNE</p>
+[VICP-T6JGPJNE](https://mikufans.qzz.io/)
