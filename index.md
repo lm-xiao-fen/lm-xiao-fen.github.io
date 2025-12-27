@@ -2,6 +2,7 @@
 layout: default
 title: xf_blog
 ---
+### [xf_blog](/)
 
 # Hi, I'm xiaofen（lm-xiao-fen）
 
