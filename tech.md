@@ -2,8 +2,6 @@
 layout: default
 title: 技术博客
 ---
-### [xf_blog](/)    
-
 # 技术博客
 
 <ul class="list-style-none pl-0">
