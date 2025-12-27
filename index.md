@@ -16,6 +16,9 @@ title: xf_blog
 [email: G114514g@yeah.net](mailto:G114514g@yeah.net)
 [YouTube](https://youtube.com/@lm-xiao-fen)
 
+[GitHub](https://github.com/lm-xiao-fen/)
+[Gitee](https://gitee.com/lm-xiao-fen/)
+
 ---
 
 ## Blog  
