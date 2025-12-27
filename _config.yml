@@ -5,3 +5,7 @@ baseurl: ""
 url: "https://lm-xiao-fen.github.io"
 
 remote_theme: pages-themes/primer@v0.6.0
+
+collections:
+  note:
+    output: true
