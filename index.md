@@ -6,22 +6,23 @@ title: xf_blog
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
+  <title>{{ page.title }} | xf_blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Primer 样式（GitHub Pages 会自动加载主题 CSS） -->
 </head>
 
 <body>
 
+  <!-- 顶栏 -->
   {% include header.html %}
 
+  <!-- 正文内容（关键！） -->
   <main class="container-lg px-3 my-5">
     {{ content }}
   </main>
 
 </body>
 </html>
+
 
 # Hi, I'm xiaofen（lm-xiao-fen）
 
