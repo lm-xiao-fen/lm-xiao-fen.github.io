@@ -15,3 +15,10 @@ date: 2025-12-14
 [email:G114514g@yeah.net](mailto:G114514g@yeah.net)
 [YouTube](https://youtobe.com/@lm-xiao-fen)
 ```
+
+顶栏添加内容代码
+```
+<div class="Header-item">
+  <a href="/projects/" class="Header-link">项目</a>
+</div>
+```
