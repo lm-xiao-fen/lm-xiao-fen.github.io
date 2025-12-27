@@ -2,7 +2,26 @@
 layout: default
 title: xf_blog
 ---
-### [xf_blog](/)
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Primer 样式（GitHub Pages 会自动加载主题 CSS） -->
+</head>
+
+<body>
+
+  {% include header.html %}
+
+  <main class="container-lg px-3 my-5">
+    {{ content }}
+  </main>
+
+</body>
+</html>
 
 # Hi, I'm xiaofen（lm-xiao-fen）
 
