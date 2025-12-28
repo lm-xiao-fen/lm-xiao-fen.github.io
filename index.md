@@ -2,28 +2,6 @@
 layout: default
 title: xf_blog
 ---
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }} | xf_blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-
-<body>
-
-  <!-- 顶栏 -->
-  {% include header.html %}
-
-  <!-- 正文内容（关键！） -->
-  <main class="container-lg px-3 my-5">
-    {{ content }}
-  </main>
-
-</body>
-</html>
-
-
 # Hi, I'm xiaofen（lm-xiao-fen）
 
 - 欢迎来到我的个人主页
