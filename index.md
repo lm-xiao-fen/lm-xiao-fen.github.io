@@ -1,4 +1,4 @@
----
+ ---
 layout: default
 title: xf_blog
 ---
@@ -21,7 +21,7 @@ title: xf_blog
 ## 我的开源
 
 [GitHub](https://github.com/lm-xiao-fen)
-[Gitee](https://githee.com/lm-xiao-fen)
+[Gitee](https://gitee.com/lm-xiao-fen)
 
 ---
 
