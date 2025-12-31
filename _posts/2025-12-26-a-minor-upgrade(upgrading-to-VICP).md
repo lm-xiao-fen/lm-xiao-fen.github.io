@@ -8,6 +8,7 @@ VICP虽然能用，但还是少了些功能 于是我升级了一下
 
 ## 你先看看
 ![虚拟备案预览](https://lm-xiao-fen.github.io/image/%E8%99%9A%E6%8B%9F%E5%A4%87%E6%A1%88%20(26.12.2025%2021_19).png)
+
 [使用虚拟备案](https://mikufans.qzz.io/)
 
 ## 升级了哪些
