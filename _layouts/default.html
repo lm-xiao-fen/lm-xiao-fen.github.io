@@ -2,41 +2,30 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }} | {{ page.description }}</title>
+  <title>{{ page.title }} | xf_blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- 关键：加载 Primer 主题 CSS -->
+  <!-- Primer 主题 CSS -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
-<style>
-  .Header {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  @media (min-width: 1012px) {
-    .Header {
-      padding-left: 2rem;
-      padding-right: 2rem;
+  <style>
+    .markdown-body img {
+      max-width: 100%;
+      height: auto;
     }
-  }
-</style>
-  
-</head>  
+  </style>
+</head>
 
 <body>
 
   {% include header.html %}
 
   <main class="container-lg px-3 my-5">
-    {{ content }}
+    <!-- 关键：没有这一层，整个站都会“挤”和“小” -->
+    <article class="markdown-body">
+      {{ content }}
+    </article>
   </main>
 
 </body>
-
-<style>
-  .markdown-body img {
-    max-width: 100%;
-    height: auto;
-  }
-</style>
 </html>
