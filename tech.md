@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: 技术博客
 ---
 # 技术博客
