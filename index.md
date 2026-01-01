@@ -3,12 +3,12 @@ layout: default
 title: xf_blog
 ---
 
-# Hi, I'm xiaofen（lm-xiao-fen）
+# Hi, I'm xiaofen（lm-xiao-fen）  
 
-欢迎来到我的个人主页。  
-这里记录我在 **Web 开发 / Cloudflare / GitHub / 视频创作** 方面的内容。
+> 欢迎来到我的个人主页
+> 这里记录我在 **Web 开发 / Cloudflare / GitHub / 视频创作** 方面的内容
 
-[副站](https://lm-xiao-fen.github.io/my-web/)
+[副站](https://mikufans1.dpdns.org)  
 [随笔](/note)
 [技术博客](/tech)
 
@@ -31,8 +31,8 @@ title: xf_blog
 ### [{{ post.title }}]({{ post.url }})
 
 <small class="color-fg-muted">
-{{ post.date | date: "%Y-%m-%d" }}
-</small>
+{{ post.date | date: "%Y-%m-%d" }}      
+</small>  
 
 {{ post.excerpt | strip_html | truncate: 120 }}
 
@@ -44,12 +44,12 @@ title: xf_blog
 
 ## 最新随笔
 
-{% assign notes = site.note | sort: "date" | reverse %}
+{% assign notes = site.note | sort: "date" | reverse %}  
 {% for post in notes limit:2 %}
 ### [{{ post.title }}]({{ post.url }})
 
 <small class="color-fg-muted">
-{{ post.date | date: "%Y-%m-%d" }}
+{{ post.date | date: "%Y-%m-%d" }}  
 </small>
 
 {{ post.excerpt | strip_html | truncate: 120 }}
