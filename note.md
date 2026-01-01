@@ -1,6 +1,6 @@
 ---
-layout: default
-title: 随记 xf_blog    
+layout: page
+title: 随记
 ---
 # 随记
 
