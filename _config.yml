@@ -1,11 +1,17 @@
 title: "xf_blog"
 description: "xiaofen's jekyll blog"
+lang: zh-CN
 
 baseurl: ""
 url: "https://lm-xiao-fen.github.io"
 
-remote_theme: pages-themes/primer@v0.6.0
+theme: minima
+plugins:        
+  - jekyll-feed  
+   
 
 collections:
   note:
-    output: true
+    output: true  
+
+# remote_theme: pages-themes/primer@v0.6.0
