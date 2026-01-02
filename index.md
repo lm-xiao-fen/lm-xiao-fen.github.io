@@ -1,6 +1,5 @@
 ---
-layout: home
-title: xf_blog
+layout: home  
 ---
 
 # Hi, I'm xiaofen（lm-xiao-fen）        
