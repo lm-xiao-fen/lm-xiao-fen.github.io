@@ -1,33 +1,30 @@
-title: "xf_blog"
-
-author:      
-  name: lm-xiao-fen      
-  email: your-email@domain.com        
+title: xf_blog
+author:
+  name: lm-xiao-fen
+  email: G114514g@yeah.net
 
 description: >
-  xiaofen’s jekyll blog    
-
-baseurl: ""
-url: "https://lm-xiao-fen.github.io"      
+  xiaofen's jekyll blog
 
 remote_theme: "jekyll/minima@1e8a445"
-# remote_theme: pages-themes/primer@v0.6.0          
+# remote_theme: pages-themes/primer@v0.6.0
 
-collections:    
-  note:
-    output: true  
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 
+sass:
+  quiet_deps: true
+  silence_deprecations: [import]
+  
 minima:
   skin: classic
 
-nav_pages:               
-    - note.md          
-    - tech.md            
+  nav_pages:
+    - tech.md
+    - note.md
 
-plugins:    
-  - jekyll-feed
-  - jekyll-seo-tag  
-
-sass:  
-  quiet_deps: true        
-  silence_deprecations: [import]
+  social_links:
+    - title: GitHub
+      icon: github
+      url: "https://github.com/lm-xiao-fen"
