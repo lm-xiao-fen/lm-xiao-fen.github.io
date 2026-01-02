@@ -5,10 +5,20 @@ lang: zh-CN
 baseurl: ""
 url: "https://lm-xiao-fen.github.io"
 
-remote_theme: "jekyll/minima@1e8a445"
+remote_theme: "jekyll/minima@1e8a445"  
 
 collections:
   note:
     output: true  
 
 # remote_theme: pages-themes/primer@v0.6.0
+
+minima:
+  skin: dark
+  nav_pages:  
+    - note.md        
+    - tech.md    
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
