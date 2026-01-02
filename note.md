@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: 随记
 ---
 # 随记
