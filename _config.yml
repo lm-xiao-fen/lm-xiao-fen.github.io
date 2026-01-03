@@ -1,4 +1,4 @@
-title: xf_blog
+title: "xf_blog"        
 author:
   name: lm-xiao-fen
   email: G114514g@yeah.net
@@ -58,7 +58,7 @@ nav_pages:
   social_links:
     - title: GitHub
       icon: github
-      url: "https://github.com/lm-xiao-fen"
+      url: "https://github.com/lm-xiao-fen"  
 
 collections:
   note:
