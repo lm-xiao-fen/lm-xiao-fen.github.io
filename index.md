@@ -14,7 +14,7 @@ layout: home
 
 ## 联系我
 
-[Bilibili](https://space.bilibili.com/3494372658121066)
+[Bilibili](https://space.bilibili.com/3494372658121066)  
 [Email](mailto:G114514g@yeah.net)
 [YouTube](https://youtube.com/@lm-xiao-fen)
 
@@ -27,16 +27,7 @@ layout: home
 
 ## 最新技术博客
 
-{% for post in site.posts limit:2 %}
-### [{{ post.title }}]({{ post.url }})
 
-<small class="color-fg-muted">
-{{ post.date | date: "%Y-%m-%d" }}      
-</small>  
-
-{{ post.excerpt | strip_html | truncate: 120 }}
-
-{% endfor %}
 
 [查看全部技术博客](/tech)
 
@@ -44,17 +35,7 @@ layout: home
 
 ## 最新随笔
 
-{% assign notes = site.note | sort: "date" | reverse %}  
-{% for post in notes limit:2 %}
-### [{{ post.title }}]({{ post.url }})
 
-<small class="color-fg-muted">
-{{ post.date | date: "%Y-%m-%d" }}  
-</small>
-
-{{ post.excerpt | strip_html | truncate: 120 }}
-
-{% endfor %}
 
 [查看全部随笔](/note)
 
