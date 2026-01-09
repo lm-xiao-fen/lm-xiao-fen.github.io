@@ -9,12 +9,12 @@ jobs:
         uses: actions/checkout@v3
         
       - name: Create symbolic link  
-        run: |        
-         if [ ! -d "assets/lib" ] && ! git config --file .gitmodules --get-regexp path | grep -q "assets/lib"; then      
-         git submodule add https://github.com/lm-xiao-fen/lm-xiao-fen.github.io_stop assets/lib  
+        run: |
+         if [ ! -d "assets/lib" ] && ! git config --file .gitmodules --get-regexp path | grep -q "assets/lib"; then  
+         git submodule add https://github.com/cotes2020/chirpy-static-assets.git assets/lib  
          fi
-         git config --global user.email "aaaaaabbbbbb1999@outlook.com"    
-         git config --global user.name "lm-xiao-fen"  
-         git add .  
-         git commit -m "Update symlink" || exit 0  
-         git push    
+         git config --global user.email "aaaaaabbbbbb1999@outlook.com"  
+         git config --global user.name "lm-xiao-fen"
+         git add .
+         git commit -m "Update symlink" || exit 0
+         git push  
