@@ -1,6 +1,6 @@
 # lm-xiao-fen.github.io
 写blog的模板
-```yaml  
+```yaml
 ---
 layout: post
 title: "这里写文章标题"
