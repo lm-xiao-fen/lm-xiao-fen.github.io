@@ -10,8 +10,8 @@ jobs:
         
       - name: Create symbolic link
         run: |
-          git submodule add https://github.com/lm-xiao-fen/lm-xiao-fen.github.io_stop.git assets/lib        
-          git config --global user.email "aaaaaabbbbbb1999@outlook.com"                            
+          git submodule add https://github.com/lm-xiao-fen/lm-xiao-fen.github.io_stop assets/lib          
+          git config --global user.email "aaaaaabbbbbb1999@outlook.com"                              
           git config --global user.name "lm-xiao-fen"    
           git add .
           git commit -m "Update symlink" || exit 0
