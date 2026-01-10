@@ -1,13 +1,15 @@
 ---
-layout: post
-title: "一个小升级（升级VICP）"
-date: 2025-12-26
+title: ""一个小升级（升级VICP）"                        
+date: 2025-12-20
+categories: [tech]
+tags: [Cloudflare, Workers]
 ---
+
 # 一个小升级（升级VICP）
 VICP虽然能用，但还是少了些功能 于是我升级了一下
 
 ## 你先看看
-![虚拟备案预览](/image/%E8%99%9A%E6%8B%9F%E5%A4%87%E6%A1%88%20(26.12.2025%2021_19).png)
+![虚拟备案预览](/image/%E8%99%9A%E6%8B%9F%E5%A4%87%E6%A1%88%20(26.12.2025%2021_19).png)  
 
 [使用虚拟备案](https://mikufans.qzz.io/)
 
@@ -23,9 +25,4 @@ VICP虽然能用，但还是少了些功能 于是我升级了一下
 由于我不想被紫菜，就在页脚加了个免责声明，你……应该在预览看到了吧？
 
 ## 项目链接
-[lm-xiao-fen](https://github.com/VICP)
-
-### 联系我
-[bilibili](https://space.bilibili.com/3494372658121066/)
-[email:G114514g@yeah.net](mailto:G114514g@yeah.net)
-[YouTube](https://youtobe.com/@lm-xiao-fen)
+[lm-xiao-fen/VICP](https://github.com/VICP)  
