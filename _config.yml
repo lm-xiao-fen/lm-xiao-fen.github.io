@@ -28,7 +28,7 @@ social:
   email: G114514g@yeah.net
   links:
     - https://github.com/lm-xiao-fen
-    # - https://twitter.com/lm_xiao_fen                          
+    # - https://twitter.com/lm_xiao_fen                            
 
 # ------------------------
 # Theme Appearance  
@@ -56,14 +56,14 @@ comments:
   giscus:
     repo: lm-xiao-fen/lm-xiao-fen.github.io
     repo_id: R_kgDOQnohXg
-    category: Comments
+    category: General
     category_id: DIC_kwDOQnohXs4C0yVf
     mapping: pathname
     reactions_enabled: true
     emit_metadata: false
     input_position: top
     theme: dark
-    lang: zh-CN  
+    lang: zh-CN
 
 # ------------------------
 # Collections（Chirpy 必须）
@@ -103,7 +103,7 @@ kramdown:
       line_numbers: true
 
 # ------------------------
-# Assets
+# Assets  
 # ------------------------
 
 sass:
