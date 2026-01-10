@@ -1,7 +1,8 @@
 ---
-layout: post
-title: "Cloudflare Workers + KV 数据库 = 一个虚拟备案系统"
+title: "Cloudflare Workers + KV 数据库 = 一个虚拟备案系统"        
 date: 2025-12-20
+categories: [tech]  
+tags: [Cloudflare, Workers]
 ---
 
 # cloudflare workers + kv 数据库 = 一个虚拟备案系统
@@ -45,13 +46,8 @@ RECORD_KV
 ### 绑定自定义域(可选)
 - 打开创建的workers，点击>**设置**>**添加自定义域**>**自定义域**>填写你的域名或子域名
 
-## 先试用一下
-[试用网站](https://mikufans.qzz.io)
+## 试用一下
+[试用网站](https://mikufans.qzz.io)  
 
 ## 结尾说点话
 给[lm-xiao-fen/VICP](https://github.com/lm-xiao-fen/VICP)一个star吧
-
-### 联系我
-[bilibili](https://space.bilibili.com/3494372658121066/)
-[email:G114514g@yeah.net](mailto:G114514g@yeah.net)
-[YouTube](https://youtobe.com/@lm-xiao-fen)
