@@ -1,16 +1,15 @@
 ---
-layout: post
 title: "你怎么了!我的博客!"
-date: 2025-12-14    
+date: 2025-12-14
+categories: [tech]
+tags: [blog]
 ---
-
-好好的博客突然就这样了
 
 # 你怎么了!我的博客!
 ## 昨天我还在打磨我的博客 ~~与其说是打磨,还不如说我是手欠~~
 
 就变成这样了
-![事发后的博客](https://lm-xiao-fen.github.io/image/https___lm-xiao-fen.github.io%20(13.12.2025%2021_35).png)    
+![事发后的博客](https://lm-xiao-fen.github.io/image/https___lm-xiao-fen.github.io%20(13.12.2025%2021_35).png)          
 
 但也补救回来了
 
