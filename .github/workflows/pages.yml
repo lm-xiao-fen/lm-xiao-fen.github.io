@@ -32,7 +32,7 @@ jobs:
         run: bundle exec jekyll build --config _config.yml --trace
 
       - name: Upload artifact for Pages
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v6
         with:
           path: ./_site
 
