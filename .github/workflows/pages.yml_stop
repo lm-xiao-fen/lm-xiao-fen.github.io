@@ -1,4 +1,4 @@
-name: "Build and Deploy"
+name: "Jekyll Build and Deploy"  
 on:
   push:
     branches:
@@ -6,7 +6,7 @@ on:
       - master
     paths-ignore:
       - .gitignore
-      - README.md
+      - README.md    
       - LICENSE
 
   # Allows you to run this workflow manually from the Actions tab
