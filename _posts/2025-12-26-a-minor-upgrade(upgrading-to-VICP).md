@@ -1,5 +1,5 @@
 ---
-title: ""一个小升级（升级VICP）"                        
+title: "一个小升级（升级VICP）"
 date: 2025-12-20
 categories: [tech]
 tags: [Cloudflare, Workers]
