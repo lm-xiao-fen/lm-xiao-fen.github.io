@@ -1,12 +1,18 @@
 # lm-xiao-fen.github.io
-写blog的模板
+写blog的模板(技术)
 ```yaml
 ---
-layout: post
-title: "这里写文章标题"
-date: 2025-12-14
+title: "Cloudflare Workers + KV"
+date: 2025-12-20
+categories: [tech]
+tags: [Cloudflare, Workers]
 ---
-
-这里写正文  
-支持 Markdown
 ```
+随记的
+```yaml
+---
+title: happy new year    
+date: 2025-12-14
+categories: [Note]
+tags: [随记]
+---
