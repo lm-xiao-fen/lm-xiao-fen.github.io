@@ -1,5 +1,6 @@
 ---
-layout: categories
+title: 类别
+layout: categories  
 icon: fas fa-stream
-order: 1
+order: 5
 ---
