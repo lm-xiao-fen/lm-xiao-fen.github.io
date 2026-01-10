@@ -1,7 +1,7 @@
 ---
-title: "Cloudflare Workers + KV 数据库 = 一个虚拟备案系统"        
+title: "Cloudflare Workers + KV 数据库 = 一个虚拟备案系统"
 date: 2025-12-20
-categories: [tech]  
+categories: [tech]
 tags: [Cloudflare, Workers]
 ---
 
@@ -10,7 +10,7 @@ tags: [Cloudflare, Workers]
 我闲的78疼时，我就想做个玩具玩玩 VICP虚拟备案系统应运而生
 
 ## 先看看长啥样
-![预览](https://lm-xiao-fen.github.io/image/%E8%99%9A%E6%8B%9F%E5%A4%87%E6%A1%88%20(20.12.2025%2020_41).png)
+![预览](/image/%E8%99%9A%E6%8B%9F%E5%A4%87%E6%A1%88%20(20.12.2025%2020_41).png)  
 源码到时候放github上了，这只是教程 [lm-xiao-fen/VICP](https://github.com/lm-xiao-fen/VICP)
 
 ## 需要什么
@@ -50,4 +50,4 @@ RECORD_KV
 [试用网站](https://mikufans.qzz.io)  
 
 ## 结尾说点话
-给[lm-xiao-fen/VICP](https://github.com/lm-xiao-fen/VICP)一个star吧
+给[lm-xiao-fen/VICP](https://github.com/lm-xiao-fen/VICP)一个star吧  
