@@ -5,7 +5,7 @@ layout: home
 # Hi, I'm xiaofen（lm-xiao-fen）          
 
 > 欢迎来到我的个人主页
-
+> 
 > 这里记录我在 **Web 开发 / Cloudflare / GitHub / 视频创作** 方面的内容
 
 [副站](https://mikufans1.dpdns.org)  
@@ -22,21 +22,3 @@ layout: home
 
 [GitHub](https://github.com/lm-xiao-fen)
 [Gitee](https://gitee.com/lm-xiao-fen)
-
----
-
-## 最新技术博客
-
-
-
-[查看全部技术博客](/tech)
-
----
-
-## 最新随笔
-
-
-
-[查看全部随笔](/note)
-
----
