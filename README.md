@@ -15,6 +15,6 @@ tags: [Cloudflare, Workers] 
 ---
 title: happy new year
 date: 2025-12-14
-categories: [Note]
+categories: [note]    
 tags: [随记]
 ---
