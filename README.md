@@ -1,5 +1,5 @@
 # lm-xiao-fen.github.io
-blog模板来源[cotes2020/jekyll-theme-chirpy/](https://github.com/cotes2020/jekyll-theme-chirpy/)                              
+blog模板来源[cotes2020/jekyll-theme-chirpy](https://github.com/cotes2020/jekyll-theme-chirpy/)                                      
 
 写blog的模板(技术)
 ```yaml
@@ -18,3 +18,5 @@ date: 2025-12-14
 categories: [note]    
 tags: [随记]
 ---
+```
+[license](/LICENSE)                  
