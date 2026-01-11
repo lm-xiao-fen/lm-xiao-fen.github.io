@@ -135,8 +135,8 @@
         {
           "assets": [
             "docs",
-            "package.json",
-            "*.gemspec"  
+            "package.json",  
+            "*.gemspec"
           ],
           "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
         }
