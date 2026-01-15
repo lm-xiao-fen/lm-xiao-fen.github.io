@@ -37,7 +37,7 @@ social:
 theme_mode: dark
 # light | dark | 留空 = 跟随系统  
 
-# avatar: /assets/img/avatar.png   # 可选，没有就先删掉
+avatar: /assets/img/avatar.png   # 可选，没有就先删掉      
 
 toc: true
 
@@ -118,3 +118,12 @@ exclude:
   - LICENSE
   - docs
   - tools
+
+# -------------------------
+# plugins
+# -------------------------
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-include-cache
+  - jekyll-paginate
