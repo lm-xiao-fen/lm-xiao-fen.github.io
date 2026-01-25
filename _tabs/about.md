@@ -11,8 +11,8 @@ order: 4
 > 这里记录我在 **Web 开发 / Cloudflare / GitHub / 视频创作** 方面的内容
 
 [副站](https://mikufans1.dpdns.org)  
-[随笔](/note)
-[技术博客](/tech)
+[随笔](https://lm-xiao-fen.github.io/categories/note/)  
+[技术博客](https://lm-xiao-fen.github.io/categories/tech/)
 
 ## 联系我
 
