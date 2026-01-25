@@ -2,8 +2,7 @@
 icon: fas fa-info-circle
 order: 4
 ---
-
-# Hi, I'm xiaofen（lm-xiao-fen）            
+# Hi, I'm xiaofen（lm-xiao-fen）          
 
 > 欢迎来到我的个人主页
 >
@@ -23,3 +22,5 @@ order: 4
 
 [GitHub](https://github.com/lm-xiao-fen)
 [Gitee](https://gitee.com/lm-xiao-fen)
+
+{: .prompt-tip }
