@@ -1,7 +1,9 @@
 ---
+# the default layout is 'page'
 icon: fas fa-info-circle
 order: 4
 ---
+
 # Hi, I'm xiaofen（lm-xiao-fen）          
 
 > 欢迎来到我的个人主页
