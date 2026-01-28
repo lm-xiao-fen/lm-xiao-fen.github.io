@@ -1,6 +1,6 @@
 ---
 title: happy new years           
-date: 2025-12-14
+date: 2026-01-01
 categories: [note]
 tags: [随记]
 ---
