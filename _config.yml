@@ -4,13 +4,18 @@
 theme: jekyll-theme-chirpy
 
 # ----------------
-# 基本设置
+# 语言
 # ----------------
 lang: zh-CN
 
-# Change to your timezone › https://zones.arilyn.cc
-timezone:
+# ----------------
+# 时区
+# ----------------
+timezone: Asia/Shanghai
 
+# ----------------
+# 标题 & 简介 & 描述
+# ----------------
 title: xf_blog
 
 tagline: 立志用githubpages，cloudflareworkers 和 vercel做出整个互联网的人（虽然不会成功
@@ -65,17 +70,9 @@ analytics:
 pageviews:
   provider: # now only supports 'goatcounter'
 
-# Prefer color scheme setting.
-#
-# Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
-#
-# Available options:
-#
-#     light — Use the light color scheme
-#     dark — Use the dark color scheme
-#
+# --------------
+# 网站主题色
+# --------------
 theme_mode: dark
 
 # The CDN endpoint for media resources.
