@@ -1,6 +1,6 @@
 ---
 title: "朋友的电脑，好玩"
-date: 2025-12-13
+date: 2026-01-30
 categories: [note]
 tags: [随记]
 ---
