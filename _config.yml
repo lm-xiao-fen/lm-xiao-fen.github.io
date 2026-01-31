@@ -28,8 +28,8 @@ url: ""
 github:
   username: lm-xiao-fen
 
-# twitter:
-#   username: twitter_username # change to your Twitter username
+twitter:
+  username: lm_xiao_fen
 
 social:
   name: lm-xiao-fen
@@ -96,6 +96,7 @@ social_preview_image: assets/feed.jpeg
 toc: true
 
 comments:
+  provider: giscus
   giscus:
     repo: lm-xiao-fen/lm-xiao-fen.github.io
     repo_id: R_kgDORAHnyg
@@ -125,7 +126,7 @@ pwa:
     deny_paths:
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
-paginate: 10
+paginate: 5
 
 # The base URL of your site
 baseurl: ""
