@@ -18,7 +18,7 @@ timezone: Asia/Shanghai
 # ----------------
 title: xf_blog
 
-tagline: 立志用githubpages，cloudflareworkers 和 vercel做出整个互联网的人（虽然不会成功
+tagline: 立志用githubpages，cloudflareworkers和vercel做出整个互联网的人（虽然不会成功
 
 description: >-
   xiaofen’s jekyll theme blog
@@ -26,7 +26,7 @@ description: >-
 url: ""
 
 github:
-  username: lm-xiao-fen # change to your GitHub username
+  username: lm-xiao-fen
 
 # twitter:
 #   username: twitter_username # change to your Twitter username
@@ -36,6 +36,9 @@ social:
   email: G114514g@yeah.net
   links:
     - https://github.com/lm-xiao-fen
+    - https://space.bilibili.com/3494372658121066
+    - https://youtobe.com/@lm-xiao-fen
+    - https://x.com/@lm_xiao_fen
 
 # Site Verification Settings
 webmaster_verifications:
@@ -191,6 +194,9 @@ exclude:
   - "*.config.js"
   - "package*.json"
 
+# -------------
+# 归档设定
+# -------------
 jekyll-archives:
   enabled: [categories, tags]
   layouts:
