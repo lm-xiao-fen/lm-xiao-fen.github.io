@@ -9,6 +9,6 @@ plugins:
   - jekyll-remote-theme
 
 collections:
-  notes:
+  note:
     output: true
     permalink: /note/:name/
