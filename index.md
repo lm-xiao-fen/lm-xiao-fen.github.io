@@ -2,16 +2,18 @@
 layout: home
 title: xf_blog
 ---
+# [xf_blog](/)  [友链](/feed-link)
 
 # Hi, I'm lm-xiao-fen
 
 - 欢迎来到我的个人主页
 - 这里记录我在 **Web 开发 / Cloudflare / GitHub** 方面的内容
 - [副站](https://mikufans1.dpdns.org)
+- [友链](/feed-link)
 
 ---
 
-## 🧠 最新技术博客
+## 最新技术博客
 
 <ul class="list-style-none pl-0">
   {% for post in site.posts limit:2 %}
@@ -37,7 +39,7 @@ title: xf_blog
 
 ---
 
-## ✍️ 最新随记
+## 最新随记
 
 <ul class="list-style-none pl-0">
   {% assign notes = site.note | sort: "date" | reverse %}
