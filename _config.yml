@@ -1,0 +1,13 @@
+title: "xf_blog"
+description: "jekyll blog"
+
+baseurl: ""
+url: "https://lm-xiao-fen.github.io"
+
+remote_theme: pages-themes/primer@v0.6.0
+plugins:
+  - jekyll-remote-theme
+
+collections:
+  note:
+    output: true
