@@ -2,9 +2,9 @@
 layout: home
 title: xf_blog
 ---
-### [xf_blog](/)　[副站](https://mikufans1.dpdns.org)　[友链](/feed-link)　　
+### [xf_blog](/)　[副站](https://mikufans1.dpdns.org)　[友链](/feed-link)　[技术博客](/tech)　[随笔](/note)
 
-# Hi, I'm lm-xiao-fen
+# Hi, I am xiaofen
 
 - 欢迎来到我的个人主页
 - 这里记录我在 **Web 开发 / Cloudflare / GitHub** 方面的内容
