@@ -17,20 +17,14 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true
 
-      - name: Install Jekyll
-        run: gem install jekyll
-
-      - name: Install Jekyll-remote-theme
-        run: gem install jekyll-remote-theme
-
-      - name: Uninstall jekyll-sass-converter -v 3.1.0
-        run: gem uninstall jekyll-sass-converter -v 3.1.0
-
-      - name: install jekyll-sass-converter -v 3.0.0
-        run: gem install jekyll-sass-converter -v 3.0.0
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'       # 建议与您本地版本一致
+          bundler-cache: true        # 这会自动读取 Gemfile.lock 并安装精确版本的 gem
 
       - name: Build with Jekyll
-        run: jekyll build
+        run: bundle exec jekyll build  # 必须使用 bundle exec
 
       - name: Push to another repository
         uses: cpina/github-action-push-to-another-repository@v1.7.2 # 使用支持SSH的Action
