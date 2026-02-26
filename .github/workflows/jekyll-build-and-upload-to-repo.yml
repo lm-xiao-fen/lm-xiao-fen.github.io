@@ -1,0 +1,36 @@
+name: Build Jekyll and Deploy to Another Repo via SSH
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby and Jekyll
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Build with Jekyll
+        run: |
+          bundle exec jekyll build
+        # 假设构建产物在 ./_site 文件夹
+
+      - name: Push to another repository
+        uses: cpina/github-action-push-to-another-repository@v1.7.2 # 使用支持SSH的Action
+        env:
+          # 关键步骤：使用你存在Secrets里的SSH私钥
+          SSH_DEPLOY_KEY: ${{ secrets.JEKYLL_DEPLOY_KEY }}
+        with:
+          source-directory: '_site' # 要推送的文件夹
+          destination-git-username: 'your-github-username' # 可以是任意名字，用于git commit
+          destination-git-email: 'your-email@example.com'
+          destination-repository-name: 'owner/target-repo' # 目标仓库
+          target-branch: 'gh-pages' # 目标分支
+          # 无需再配置任何token!
