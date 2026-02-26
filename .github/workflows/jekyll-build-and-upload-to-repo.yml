@@ -20,6 +20,9 @@ jobs:
       - name: Install Jekyll
         run: gem install jekyll
 
+      - name: Install Jekyll-remote-theme
+        run: gem install jekyll-remote-theme
+
       - name: Build with Jekyll
         run: jekyll build
 
