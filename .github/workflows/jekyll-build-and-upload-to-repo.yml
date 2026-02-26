@@ -23,6 +23,12 @@ jobs:
       - name: Install Jekyll-remote-theme
         run: gem install jekyll-remote-theme
 
+      - name: Uninstall jekyll-sass-converter -v 3.1.0
+        run: gem uninstall jekyll-sass-converter -v 3.1.0
+
+      - name: install jekyll-sass-converter -v 3.0.0
+        run: gem install jekyll-sass-converter -v 3.0.0
+
       - name: Build with Jekyll
         run: jekyll build
 
@@ -33,8 +39,8 @@ jobs:
           SSH_DEPLOY_KEY: ${{ secrets.JEKYLL_DEPLOY_KEY }}
         with:
           source-directory: '_site' # 要推送的文件夹
-          destination-git-username: 'your-github-username' # 可以是任意名字，用于git commit
-          destination-git-email: 'your-email@example.com'
-          destination-repository-name: 'owner/target-repo' # 目标仓库
-          target-branch: 'gh-pages' # 目标分支
+          destination-git-username: 'actionsbot' # 可以是任意名字，用于git commit
+          destination-git-email: 'bot@github.com'
+          destination-repository-name: 'lm-xiao-fen/jekyll-html' # 目标仓库
+          target-branch: 'main' # 目标分支
           # 无需再配置任何token!
