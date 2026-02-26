@@ -7,3 +7,4 @@
 <p align="center">      
   primer for blog
 </p>
+<small>好中二啊</small>
