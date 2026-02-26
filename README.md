@@ -4,7 +4,6 @@
 
 所以我称它为……
 
-<p align="center">      
-  primer for blog
-</p>
-<small>好中二啊</small>
+<h1 align="center">primer for blog</h1>
+
+###### 好中二啊
