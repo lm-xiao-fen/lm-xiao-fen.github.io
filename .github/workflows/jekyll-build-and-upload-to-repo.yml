@@ -17,10 +17,11 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true
 
+      - name: Install Jekyll
+        run: gem install jekyll
+
       - name: Build with Jekyll
-        run: |
-          bundle exec jekyll build
-        # 假设构建产物在 ./_site 文件夹
+        run: jekyll build
 
       - name: Push to another repository
         uses: cpina/github-action-push-to-another-repository@v1.7.2 # 使用支持SSH的Action
