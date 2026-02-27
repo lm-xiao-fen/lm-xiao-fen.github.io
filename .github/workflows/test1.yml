@@ -19,17 +19,14 @@ jobs:
              git config --global user.name "GitHubBot"
              git config --global user.email "bot@github.com"
 
-      - name: Clone git repo
-        run: git clone https://github.com/lm-xiao-fen/lm-xiao-fen.github.io.git
+      - name: Checkout code
+        uses: actions/checkout@v4
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
           bundler-cache: true
-
-      - name: Into repo folder
-        run: cd lm-xiao-fen.github.io
 
       - name: Install bundle
         run: bundle install
