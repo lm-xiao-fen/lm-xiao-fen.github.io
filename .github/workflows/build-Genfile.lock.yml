@@ -30,9 +30,6 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true
 
-      - name: Install bundle
-        run: bundle install
-
       - name: Build Genfile.lock
         run: bundle install
 
