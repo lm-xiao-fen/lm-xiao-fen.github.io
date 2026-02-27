@@ -1,0 +1,44 @@
+name: Build Genfile.lock
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install git
+        run: sudo apt install git
+
+      - name: Test git
+        run: git --v
+
+      - name: Config git
+        run: git config --global user.name "GitHubBot"
+             git VC config --global user.email "bot@github.com"
+
+      - name: Clone git repo
+        run: git clone https://github.com/lm-xiao-fen/lm-xiao-fen.github.io.git
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Into repo folder
+        run: cd lm-xiao-fen.github.io
+
+      - name: Install bundle
+        run: bundle install
+
+      - name: Build Genfile.lock
+        run: bundle install
+
+      - name: Add Genfile to git local repo and commit
+        run: git add Gemfile.lock
+             git commit -m "Add Gemfile.lock to manage dependencies"
+
+      - name: Push to github repo
+        run: git push origin main
