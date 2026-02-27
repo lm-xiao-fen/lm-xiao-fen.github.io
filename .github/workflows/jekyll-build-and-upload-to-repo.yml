@@ -24,7 +24,9 @@ jobs:
           bundler-cache: true        # 这会自动读取 Gemfile.lock 并安装精确版本的 gem
 
       - name: Build with Jekyll
-        run: bundle exec jekyll build  # 必须使用 bundle exec
+        env:
+         JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bundle exec jekyll build
 
       - name: Push to another repository
         uses: cpina/github-action-push-to-another-repository@v1.7.2 # 使用支持SSH的Action
