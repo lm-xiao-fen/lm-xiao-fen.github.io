@@ -1,4 +1,4 @@
-name: Build Genfile.lock
+name: Build Gemfile.lock
 
 on:
   push:
@@ -18,8 +18,8 @@ jobs:
 
       - name: Config git
         run: |
-             git config --global user.name "GitHubBot"
-             git config --global user.email "bot@github.com"
+          git config --global user.name "GitHubBot"
+          git config --global user.email "bot@github.com"
 
       - name: Checkout code
         uses: actions/checkout@v4
@@ -30,13 +30,13 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true
 
-      - name: Build Genfile.lock
-        run: bundle update
+      - name: Build Gemfile.lock
+        run: bundle install
 
-      - name: Add Genfile to git local repo and commit
+      - name: Add Gemfile.lock to git and commit
         run: |
-             git add Gemfile.lock
-             git commit -m "Add Gemfile.lock to manage dependencies"
+          git add Gemfile.lock
+          git commit -m "Add Gemfile.lock to manage dependencies" || echo "No changes to commit"
 
       - name: Push to github repo
         run: git push origin main
