@@ -1,0 +1,41 @@
+name: Build and Deploy Jekyll Site
+
+on:
+  push:
+    branches:
+      - main  # 或者其他触发分支
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.0' # 根据需要调整 Ruby 版本
+
+    - name: Install Bundler and Jekyll
+      run: |
+        gem install bundler
+        bundle install
+
+    - name: Build Jekyll Site
+      run: bundle exec jekyll build --destination ./_site
+
+    - name: Setup Git Config
+      run: |
+        git config --global user.name "GitHubBot"
+        git config --global user.email "bot@github.com"
+
+    - name: Push Built Files to Target Repository
+      run: |
+        cd _site
+        git init
+        git remote add origin https://github.com/lm-xiao-fen/jekyll-html.git  # 替换仓库URL
+        git add .
+        git commit -m "Deploy Jekyll site"
+        git branch -M main
+        git push -u origin main --force
