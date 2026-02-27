@@ -1,5 +1,5 @@
 # xf_blog
-[github线路](https://lm-xiao-fen.github.io)　[cloudflare线路](/404) [edgeone线路](/404)
+[github 线路](https://lm-xiao-fen.github.io)　[cloudflare 线路](/404)　[edgeone 线路](/404)
 ## 一点点介绍
 这是我拿 github 官方主题 primer 改的，这个主题本身是给项目仓做库介绍网页做的，但我改成了博客
 
