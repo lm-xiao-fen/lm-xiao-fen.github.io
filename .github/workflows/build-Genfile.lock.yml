@@ -31,7 +31,7 @@ jobs:
           bundler-cache: true
 
       - name: Build Genfile.lock
-        run: bundle install
+        run: bundle update
 
       - name: Add Genfile to git local repo and commit
         run: |
