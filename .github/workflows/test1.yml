@@ -35,7 +35,8 @@ jobs:
         run: bundle install
 
       - name: Add Genfile to git local repo and commit
-        run: git add Gemfile.lock
+        run: |
+             git add Gemfile.lock
              git commit -m "Add Gemfile.lock to manage dependencies"
 
       - name: Push to github repo
