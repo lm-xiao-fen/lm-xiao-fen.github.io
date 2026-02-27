@@ -17,6 +17,15 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true
 
+      - name: Test GitHub API with token
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Testing API access for repository lm-xiao-fen/lm-xiao-fen.github.io"
+          curl -H "Authorization: token $TOKEN" \
+               -H "Accept: application/vnd.github.v3+json" \
+               https://api.github.com/repos/lm-xiao-fen/lm-xiao-fen.github.io
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
