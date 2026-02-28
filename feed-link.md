@@ -7,3 +7,9 @@ title: 友链
 [二叉树树](https://2x.nz)
 
 *Protect What You Love.*
+
+
+<img src="https://www.xhehm.com/favicon.png" alt="星河hmの小窝的头像" width="32" height="32">
+[星河hmの小窝](https://xhehm.com)
+
+*人生是開發，不是預設*
