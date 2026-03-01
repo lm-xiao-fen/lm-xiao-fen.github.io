@@ -13,7 +13,7 @@ title: xf_blog
 
 {% assign tech_posts = site.posts | where_exp:"post","post.path contains '_posts/tech/'" %}
 
-## 🛠 技术博客
+## 技术博客
 
 <p>共有 {{ tech_posts | size }} 篇</p>
 
@@ -21,16 +21,15 @@ title: xf_blog
 {% for post in tech_posts limit:5 %}
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a>
-    <span>{{ post.date | date: "%Y-%m-%d" }}</span>
   </li>
 {% endfor %}
 </ul>
 
-<p><a href="/tech/">查看全部 →</a></p>
+[查看全部 →](/tech/)
 
 ---
 
-## 📝 随记
+## 随记
 
 <p>共有 {{ site.note | size }} 篇</p>
 
@@ -42,7 +41,7 @@ title: xf_blog
 {% endfor %}
 </ul>
 
-<p><a href="/note/">查看全部 →</a></p>
+[查看全部 →](/note/)
 
 ---
 
