@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 随记
+permalink: /note/
 ---
 
 # 随记
