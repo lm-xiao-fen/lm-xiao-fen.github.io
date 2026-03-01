@@ -9,8 +9,9 @@ repository: lm-xiao-fen/lm-xiao-fen.github.io
 remote_theme: pages-themes/primer@v0.6.0
 plugins:
   - jekyll-remote-theme
+  - jekyll-feed
 
-permalink: /posts/tech/:name/
+permalink: /tech/:name/
 
 collections:
   note:
