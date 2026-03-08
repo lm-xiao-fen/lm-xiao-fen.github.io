@@ -14,7 +14,3 @@ permalink: /note/
   </li>
 {% endfor %}
 </ul>
-
-{% if site.note == empty %}
-<p>暂无随记</p>
-{% endif %}
