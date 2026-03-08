@@ -5,6 +5,7 @@ permalink: /note/
 ---
 
 # 随记
+共有 {{ site.note | size }} 文章
 
 <ul>
 {% for post in site.note %}
