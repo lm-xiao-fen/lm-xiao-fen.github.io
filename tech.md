@@ -8,7 +8,7 @@ permalink: /tech/
 
 {% assign tech_posts = site.posts | where_exp:"post","post.path contains '_posts/tech/'" %}
 
-<p>共有 {{ tech_posts | size }} 篇博客</p>
+<p>共有 {{ tech_posts | size }} 篇文章</p>
 
 <ul>
 {% for post in tech_posts %}
