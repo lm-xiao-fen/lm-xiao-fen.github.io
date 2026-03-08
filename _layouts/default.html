@@ -21,11 +21,11 @@
       {{ content }}
 
       {% if site.github.private != true and site.github.license %}
-      <div class="footer border-top border-gray-light mt-5 pt-3 d-flex justify-content-between align-items-center text-gray">
-         <span></span>
-         <span>©2025 - {{ site.time | date: "%Y" }} lm-xiao-fen</span>
-         <span>本网站在GitHub开源，有问题？ {% github_edit_link "点击此处" %} 修改</span>
-      </div>
+    <div class="footer border-top border-gray-light mt-5 pt-3 text-gray" style="display:flex; justify-content:space-between; align-items:center;">
+        <div>虚拟备案号：ICP 00000000号</div>
+        <div>© 2025 - {{ "now" | date: "%Y" }} lm-xiao-fen</div>
+        <div>本网站在 GitHub 开源，有问题？ {% github_edit_link "点击此处" %} 修改</div>
+    </div>
       {% endif %}
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
