@@ -7,6 +7,8 @@
 {% include head-custom-umami.html %}
 
 <!-- You can set your favicon here -->
-<link rel="shortcut icon" type="image/jpg" href="{{ '/image/MEITU_20260128_220225596.jpg' | relative_url }}">
+{% capture favicon_path %}{{ '/image' | relative_url }}{% endcapture %}
+
+<link rel="icon" type="image/jpg" href="{{ favicon_path }}/MEITU_20260128_220225596.jpg" sizes="96x96">
 
 <!-- end custom head snippets -->
