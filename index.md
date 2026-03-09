@@ -2,7 +2,7 @@
 layout: home
 title: xf_blog
 ---
-### [xf_blog](/)　[副站](https://mikufans1.dpdns.org)　[友链](/feed-link)　[技术博客](/tech)　[随笔](/note)
+### [xf_blog](/)　[副站](https://mikufans1.dpdns.org)　[友链](/feed-link)　[归档](/archive/)
 
 # Hi, I am xiaofen
 
