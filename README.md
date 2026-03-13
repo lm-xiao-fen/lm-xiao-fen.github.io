@@ -19,6 +19,7 @@
 layout: post
 title: "title"
 date: YYYY-MM-DD
+tags: [tag, tags]
 ---
 ```
 
