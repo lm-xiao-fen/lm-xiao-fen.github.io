@@ -1,6 +1,7 @@
 ---
 layout: home
 title: xf_blog
+permalink: /
 ---
 ### [xf_blog](/)　[副站](https://mikufans1.dpdns.org)　[友链](/feed-link)　[归档](/archive/)
 
@@ -44,6 +45,24 @@ title: xf_blog
 [查看全部 →](/note/)
 
 ---
+
+## 热门标签
+
+  <div class="tag-list">
+    {% assign sorted_tags = site.tags | sort | reverse %}
+    {# 更准确的方法：将 site.tags 转换为数组并按文章数量排序 #}
+    {% assign tags = site.tags | sort %}
+    {% assign sorted_tags = "" | split: "" %}
+    {% for tag in tags %}
+      {% assign sorted_tags = sorted_tags | push: tag %}
+    {% endfor %}
+    {% assign sorted_tags = sorted_tags | sort: "1.size" | reverse %}
+    {% for tag in sorted_tags limit:4 %}
+      <a href="/tags/#{{ tag[0] | slugify }}" class="tag-item">
+        {{ tag[0] }} <span class="count">({{ tag[1].size }})</span>
+      </a>
+    {% endfor %}
+  </div>
 
 ## 联系我
 
