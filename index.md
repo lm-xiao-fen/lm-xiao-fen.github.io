@@ -48,21 +48,27 @@ permalink: /
 
 ## 热门标签
 
-  <div class="tag-list">
-    {% assign sorted_tags = site.tags | sort | reverse %}
-    {# 更准确的方法：将 site.tags 转换为数组并按文章数量排序 #}
-    {% assign tags = site.tags | sort %}
-    {% assign sorted_tags = "" | split: "" %}
-    {% for tag in tags %}
-      {% assign sorted_tags = sorted_tags | push: tag %}
-    {% endfor %}
-    {% assign sorted_tags = sorted_tags | sort: "1.size" | reverse %}
-    {% for tag in sorted_tags limit:4 %}
-      <a href="/tags/#{{ tag[0] | slugify }}" class="tag-item">
-        {{ tag[0] }} <span class="count">({{ tag[1].size }})</span>
-      </a>
-    {% endfor %}
-  </div>
+{% assign tech_posts = site.posts | where_exp:"post","post.path contains '_posts/tech/'" %}
+{% assign all_posts = tech_posts | concat: site.note %}
+
+{% assign tags = "" | split: "" %}
+
+{% for post in all_posts %}
+  {% if post.tags %}
+    {% assign tags = tags | concat: post.tags %}
+  {% endif %}
+{% endfor %}
+
+{% assign sorted_tags = tags | uniq | sort %}
+
+<div style="margin-bottom:20px;">
+{% for tag in sorted_tags limit:10 %}
+  <a href="/tag/#{{ tag }}" 
+     style="margin-right:10px;padding:4px 8px;background:#f2f2f2;border-radius:5px;">
+     #{{ tag }}
+  </a>
+{% endfor %}
+</div>
 
 ## 联系我
 
