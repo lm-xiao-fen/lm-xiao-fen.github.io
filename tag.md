@@ -1,15 +1,46 @@
 ---
 layout: page
-title: 标签云
+title: 标签
 permalink: /tag/
 ---
-# 全部标签
 
-<div class="tag-cloud">
-  {% assign tags = site.tags | sort %}
-  {% for tag in tags %}
-    <a href="/tag/{{ tag[0] | slugify }}" style="font-size: {{ tag[1] | size | times: 2 | plus: 12 }}px;">
-      {{ tag[0] }} ({{ tag[1] | size }})
-    </a>
-  {% endfor %}
+# 标签云
+
+<div style="line-height:2em;">
+{% assign tech_posts = site.posts | where_exp:"post","post.path contains '_posts/tech/'" %}
+{% assign all_posts = tech_posts | concat: site.note %}
+
+{% assign all_tags = "" | split: "" %}
+
+{% for post in all_posts %}
+  {% if post.tags %}
+    {% assign all_tags = all_tags | concat: post.tags %}
+  {% endif %}
+{% endfor %}
+
+{% assign sorted_tags = all_tags | uniq | sort %}
+
+{% for tag in sorted_tags %}
+  <a href="#{{ tag }}" style="margin-right:10px;">
+    {{ tag }}
+  </a>
+{% endfor %}
 </div>
+
+<hr>
+
+{% for tag in sorted_tags %}
+## {{ tag }}
+
+<ul>
+{% for post in all_posts %}
+  {% if post.tags contains tag %}
+  <li>
+    <span style="color:gray">{{ post.date | date:"%Y-%m-%d" }}</span>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+{% endfor %}
