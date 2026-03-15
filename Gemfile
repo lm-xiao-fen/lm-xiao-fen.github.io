@@ -7,3 +7,4 @@ gem "jekyll-sass-converter", "~> 3.0.0"
 gem "jekyll-seo-tag", "~> 2.8"
 gem "faraday-retry"
 gem 'jekyll-feed'
+gem "github-pages", group: :jekyll_plugins
