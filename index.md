@@ -19,7 +19,7 @@ permalink: /
 <p>共有 {{ tech_posts | size }} 篇</p>
 
 <ul>
-{% for post in tech_posts limit:5 %}
+{% for post in tech_posts limit:20 %}
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a>
   </li>
@@ -35,7 +35,7 @@ permalink: /
 <p>共有 {{ site.note | size }} 篇</p>
 
 <ul>
-{% for post in site.note limit:5 %}
+{% for post in site.note limit:20 %}
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a>
   </li>
