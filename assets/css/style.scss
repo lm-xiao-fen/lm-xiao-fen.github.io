@@ -39,14 +39,18 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ===== 边框 ===== */
-
+/* 更柔和的浅灰分割线 */
 .border,
 .border-top,
 .border-bottom,
-.border-gray-light,
+.border-gray-light {
+  border-color: #3d444d !important;
+}
+
+/* 分割线 */
 hr {
-  border-color: #30363d !important;
+  border: none;
+  border-top: 1px solid #3d444d;
 }
 
 /* ===== header / footer ===== */
@@ -96,13 +100,6 @@ a[style*="background"] {
   border: 1px solid #30363d !important;
   color: #c9d1d9 !important;
   border-radius: 6px;
-}
-
-/* ===== 分割线 ===== */
-
-hr {
-  border: none;
-  border-top: 1px solid #30363d;
 }
 
 /* ===== 滚动条（可选，美化） ===== */
