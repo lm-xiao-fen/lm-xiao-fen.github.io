@@ -34,6 +34,8 @@ permalink: /
 
 <p>共有 {{ site.note | size }} 篇</p>
 
+{% assign notes = site.note | sort: "date" | reverse %}
+
 <ul>
 {% for post in site.note limit:20 %}
   <li>
