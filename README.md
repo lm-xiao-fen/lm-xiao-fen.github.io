@@ -25,28 +25,17 @@ tags: [tag, tags]
 
 ## 怎么部署
 这是我的自用博客，并没有开放一个模板
-如果你要使用你可以按照以下方法
 
-### 直接fork
-点击仓库顶部的 **fork** 或者直接[点击此处](https://github.com/lm-xiao-fen/lm-xiao-fen.github.io/fork)
+但我可以给你一个思路
 
-将 **_posts** 和 **_note** 里的所有文件删除
+### 文章
+进入 **_posts/tech** 和 **_note** ， 将文件里面的文件全部删除
 
-### git 下来
-在你的 github 创建好一个一个仓库
+### 布局
+我自己定制了 **_layouts** 文件夹下的 **default.html** **page.html** **post.html**，你需要自己修改
 
-将这个仓库克隆到本地
+### 数据统计代码
+**_includes** 文件夹下存放着网站的统计代码（谷歌统计，微软统计，umami统计）不需要可以删除，也可以改成你自己的
 
-```shell
-git clone https://github.com/lm-xiao-fen/lm-xiao-fen.github.io.git  # 克隆该项目
-cd lm-xiao-fen.github.io  # 进入项目文件
-```
-
-将 **_posts** 和 **_note** 里的所有文件删除
-
-```shell
-rm -i ./_posts/*  # 删除 /_posts 下的所有文件
-rm -i ./_note/*  # 删除 /_note 下的所有文件
-```
-
-打开你创建的仓库网页，点击添加文件，上传项目文件中的所有文件和文件夹
+### 网站样式
+**assets/css** 文件夹下为我对原主题作的深色模式但没做切换（也就是说只有深色模式），可以删除或修改
