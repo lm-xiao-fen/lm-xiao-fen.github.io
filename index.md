@@ -19,7 +19,7 @@ permalink: /
 <p>共有 {{ tech_posts | size }} 篇</p>
 
 <ul>
-{% for post in tech_posts limit:20 %}
+{% for post in tech_posts limit:2 %}
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a>
   </li>
@@ -36,7 +36,7 @@ permalink: /
 
 {% assign sorted_notes = site.note | sort: 'date' | reverse %}
 <ul>
-{% for post in sorted_notes limit:20 %}
+{% for post in sorted_notes limit:2 %}
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a>
   </li>
