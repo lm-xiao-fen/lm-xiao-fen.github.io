@@ -20,3 +20,22 @@ permalink: /feed-link/
 [ccw_china的博客](https://ccwchina.gt.tc)
 
 *爱编程的初中生，热爱生活，热爱编程*
+
+
+### 留言墙
+
+<script src="https://giscus.app/client.js"
+        data-repo="lm-xiao-fen/lm-xiao-fen.github.io"
+        data-repo-id="R_kgDORKpEPA"
+        data-category="General"
+        data-category-id="DIC_kwDORKpEPM4C3Lg_"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-input-position="top"
+        data-theme="dark"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
