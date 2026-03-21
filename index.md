@@ -13,7 +13,6 @@ permalink: /
 ---
 
 {% assign tech_posts = site.posts | where_exp:"post","post.path contains '_posts/tech/'" %}
-{% assign notes = site.note | sort: "date" | reverse %}
 
 ## 技术博客
 
@@ -35,8 +34,9 @@ permalink: /
 
 <p>共有 {{ site.note | size }} 篇</p>
 
+{% assign sorted_notes = site.note | sort: 'date' | reverse %}
 <ul>
-{% for post in site.note limit:20 %}
+{% for post in sorted_notes limit:20 %}
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a>
   </li>
