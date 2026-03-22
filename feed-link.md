@@ -21,6 +21,11 @@ permalink: /feed-link/
 
 *爱编程的初中生，热爱生活，热爱编程*
 
+
+<img src="https://r2.gh-proxy.com/GitHub-Mark-ea2971cee799.png" alt="GitHub加速下载代理的头像" width="32" height="32">
+[GitHub加速下载代理](https://gh-proxy.com)
+
+*支持API、Git Clone、Releases、Archive、Gist、Raw 文件代理加速下载服务*
 ---
 
 ### 留言墙
