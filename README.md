@@ -10,9 +10,9 @@
 ###### 好中二啊
 
 ## 怎么使用
-在 **_posts** 和 **_note** 下新建格式为 **YYYY-MM-DD-title.md** 的文件
+在 **_posts/tech** 和 **_note** 下新建格式为 **YYYY-MM-DD-title.md** 的文件
 
-在 **_posts** 和 **_note** 下的文件内容开头必须有下面这段内容
+在 **_posts/tech** 和 **_note** 下的文件内容开头必须有下面这段内容
 
 ```yaml
 ---
