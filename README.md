@@ -16,10 +16,10 @@
 
 ```yaml
 ---
-layout: post
-title: "title"
-date: YYYY-MM-DD
-tags: [tag, tags]
+layout: post # 布局，必须，不可改
+title: "title" # 标题，""内的内容可改
+date: YYYY-MM-DD # 时间，将YYYY-MM-DD改为实际时间，例如2012-02-28
+tags: [tag, tags] # 标签，可以给你的文章家点标签，记住标签之间用英文逗号分开，且逗号后面要有空格
 ---
 ```
 
