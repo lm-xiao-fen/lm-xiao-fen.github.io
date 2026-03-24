@@ -87,10 +87,19 @@ input {
 
 /* ===== 代码块 ===== */
 
-pre, code {
-  background-color: #161b22;
+pre {
+  background-color: #0d1117;
   color: #c9d1d9;
+  border: 1px solid #30363d;
   border-radius: 6px;
+  padding: 16px;
+  overflow-x: auto;
+}
+
+code {
+  background-color: transparent;
+  color: #c9d1d9;
+  border-radius: 3px;
 }
 
 /* ===== 可复制代码块 ===== */
@@ -103,9 +112,9 @@ pre, code {
   position: absolute;
   top: 10px;
   right: 10px;
-  background: #161b22;
+  background: #30363d;
   color: #c9d1d9;
-  border: 1px solid #30363d;
+  border: none;
   border-radius: 4px;
   padding: 4px 8px;
   font-size: 12px;
@@ -131,7 +140,7 @@ a[style*="background"] {
   border-radius: 6px;
 }
 
-/* ===== 滚动条（可选，美化） ===== */
+/* ===== 滚动条 ===== */
 
 ::-webkit-scrollbar {
   width: 8px;
