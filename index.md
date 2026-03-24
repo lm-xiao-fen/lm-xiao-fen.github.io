@@ -21,7 +21,7 @@ permalink: /
 <ul>
 {% for post in tech_posts limit:2 %}
   <li>
-    [{{ post.title }}]({{ post.url }})
+    <a href="{{ post.url }}">{{ post.title }}</a>
   </li>
 {% endfor %}
 </ul>
