@@ -30,5 +30,32 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
     <script>anchors.add();</script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const codeBlocks = document.querySelectorAll('pre');
+        codeBlocks.forEach(function(pre) {
+          const container = document.createElement('div');
+          container.className = 'code-block-container';
+          pre.parentNode.insertBefore(container, pre);
+          container.appendChild(pre);
+          
+          const button = document.createElement('button');
+          button.className = 'copy-button';
+          button.textContent = '复制';
+          button.addEventListener('click', function() {
+            const code = pre.querySelector('code') ? pre.querySelector('code').textContent : pre.textContent;
+            navigator.clipboard.writeText(code).then(function() {
+              button.textContent = '已复制';
+              button.classList.add('copied');
+              setTimeout(function() {
+                button.textContent = '复制';
+                button.classList.remove('copied');
+              }, 2000);
+            });
+          });
+          container.appendChild(button);
+        });
+      });
+    </script>
   </body>
       </html>
