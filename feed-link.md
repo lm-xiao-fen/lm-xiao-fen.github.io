@@ -46,7 +46,7 @@ permalink: /feed-link/
 
 *Accelerate human progress through developer collaboration*
 
-**本网站的 Jekyll 代码和 HTML 代码由 GitHub 免费提供**
+**本网站的 Jekyll 代码和 HTML 代码由 GitHub 免费托管**
 
 <br>
 
