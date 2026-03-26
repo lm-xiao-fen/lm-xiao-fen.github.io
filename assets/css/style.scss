@@ -87,20 +87,55 @@ input {
 
 /* ===== 代码块 ===== */
 
+/* GitHub Dark 语法高亮样式（强制优先级） */
+.markdown-body pre,
+.markdown-body code,
+pre,
+code,
+.highlight pre {
+  background-color: #0d1117 !important;
+  color: #c9d1d9 !important;
+  border: 1px solid #30363d !important;
+  border-radius: 6px !important;
+}
+
 pre {
-  background-color: #0d1117;
-  color: #c9d1d9;
-  border: 1px solid #30363d;
-  border-radius: 6px;
-  padding: 16px;
-  overflow-x: auto;
+  padding: 16px !important;
+  overflow-x: auto !important;
 }
 
 code {
-  background-color: transparent;
-  color: #c9d1d9;
-  border-radius: 3px;
+  background-color: transparent !important;
+  border-radius: 3px !important;
 }
+
+/* 高亮语法颜色可选，贴近GitHub Dark */
+.markdown-body .hljs-keyword,
+.markdown-body .hljs-selector-tag,
+.markdown-body .hljs-subst {
+  color: #ff7b72 !important;
+}
+
+.markdown-body .hljs-string,
+.markdown-body .hljs-title,
+.markdown-body .hljs-name,
+.markdown-body .hljs-type,
+.markdown-body .hljs-selector-id,
+.markdown-body .hljs-selector-class,
+.markdown-body .hljs-attribute,
+.markdown-body .hljs-literal,
+.markdown-body .hljs-built_in,
+.markdown-body .hljs-builtin-name,
+.markdown-body .hljs-bullet {
+  color: #a5d6ff !important;
+}
+
+.markdown-body .hljs-comment,
+.markdown-body .hljs-quote,
+.markdown-body .hljs-deletion {
+  color: #8b949e !important;
+}
+
 
 /* ===== 可复制代码块 ===== */
 
