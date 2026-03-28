@@ -88,6 +88,4 @@ permalink: /
 
 ## 联系我
 
-- [bilibili](https://space.bilibili.com/3494372658121066)
-- [Email](mailto:G114514g@yeah.net)
-- [YouTube](https://youtube.com/@lm-xiao-fen)
+[bilibili](https://space.bilibili.com/3494372658121066)&ensp;[Email](mailto:G114514g@yeah.net)&ensp;[YouTube](https://youtube.com/@lm-xiao-fen)&ensp;[rss](https://lm-xiao-fen.github.io/feed.xml)
