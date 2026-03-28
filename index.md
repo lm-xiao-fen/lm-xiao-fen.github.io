@@ -8,7 +8,7 @@ permalink: /
 # Hi, I am xiaofen
 
 - 欢迎来到我的个人主页
-- 这里记录我在 **Web 开发 / Cloudflare / GitHub** 方面的内容
+- 这里记录我在 **开发 / 生活** 方面的内容
 
 ---
 
@@ -19,10 +19,15 @@ permalink: /
 <p>共有 {{ tech_posts | size }} 篇</p>
 
 <ul>
-{% for post in tech_posts limit:2 %}
-  <li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-  </li>
+{% for post in notes limit:2 %}
+ <li style="margin-bottom:6px;">
+  <span style="color:#8b949e; font-size:13px;">
+    {{ post.date | date: "%Y-%m-%d" }}
+  </span>
+  <a href="{{ post.url }}" style="margin-left:6px;">
+    {{ post.title }}
+  </a>
+</li>
 {% endfor %}
 </ul>
 
@@ -34,12 +39,18 @@ permalink: /
 
 <p>共有 {{ site.note | size }} 篇</p>
 
-{% assign sorted_notes = site.note | sort: 'date' | reverse %}
+{% assign notes = site.note | sort: "date" | reverse %}
+
 <ul>
-{% for post in sorted_notes limit:2 %}
-  <li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-  </li>
+{% for post in notes limit:2 %}
+ <li style="margin-bottom:6px;">
+  <span style="color:#8b949e; font-size:13px;">
+    {{ post.date | date: "%Y-%m-%d" }}
+  </span>
+  <a href="{{ post.url }}" style="margin-left:6px;">
+    {{ post.title }}
+  </a>
+</li>
 {% endfor %}
 </ul>
 
@@ -63,7 +74,7 @@ permalink: /
 {% assign sorted_tags = tags | uniq | sort %}
 
 <div style="margin-bottom:20px;">
-{% for tag in sorted_tags limit:10 %}
+{% for tag in sorted_tags limit:5 %}
   <a href="/tag/#{{ tag }}" 
      style="margin-right:10px;padding:4px 8px;background:#f2f2f2;border-radius:5px;">
      #{{ tag }}
