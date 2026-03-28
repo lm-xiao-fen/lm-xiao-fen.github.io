@@ -2,11 +2,10 @@
 layout: null
 permalink: /feed.xml
 ---
-
-{% assign tech_posts = site.posts | where_exp:"post","post.path contains '_posts/tech/'" %}
-{% assign all_posts = tech_posts | concat: site.note | sort: "date" | reverse %}
-
 <?xml version="1.0" encoding="UTF-8"?>
+{% assign tech_posts = site.posts | where_exp:"post","post.path contains '_posts/tech/'" %}
+{% assign note_posts = site.note | sort: "date" | reverse %}
+{% assign all_posts = tech_posts | concat: note_posts | sort: "date" | reverse %}
 <rss version="2.0">
   <channel>
     <title>{{ site.title }}</title>
@@ -16,15 +15,13 @@ permalink: /feed.xml
 
     {% for post in all_posts limit:30 %}
     <item>
-      <title>{{ post.title }}</title>
+      <title>{{ post.title | xml_escape }}</title>
       <link>{{ site.url }}{{ post.url }}</link>
       <guid>{{ site.url }}{{ post.url }}</guid>
       <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-      <description>
-        <![CDATA[
-        {{ post.content | strip_html | truncate: 500 }}
-        ]]>
-      </description>
+      <description><![CDATA[
+{{ post.content | strip_html | truncate: 500 }}
+]]></description>
     </item>
     {% endfor %}
 
