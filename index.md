@@ -3,12 +3,13 @@ layout: home
 title: xf_blog
 permalink: /
 ---
-### [xf_blog](/)&emsp;[副站](https://mikufans1.dpdns.org)&emsp;[友链](/feed-link/)&emsp;[归档](/archive/)&emsp;[标签](/tag/)
+### [xf_blog](/)&emsp;[副站](https://mikufans1.dpdns.org)&emsp;[友链](/feed-link/)&emsp;[归档](/archive/)&emsp;[分类](/classify/)&emsp;[标签](/tag/)
 
 # Hi, I am xiaofen
 
-- 欢迎来到我的个人主页
-- 这里记录我在 **开发 / 生活** 方面的内容
+> 欢迎来到我的个人主页
+>
+> 这里记录我在 **开发 / 生活** 方面的内容
 
 ---
 ## tech
@@ -21,7 +22,7 @@ permalink: /
 <p>共有 {{ tech_posts | size }} 篇</p>
 
 <ul>
-{% for post in tech_posts limit:20 %}
+{% for post in tech_posts limit:2 %}
   <li style="margin-bottom:6px;">
     <span style="color:#8b949e; font-size:13px;">
       {{ post.date | date: "%Y-%m-%d" }}
