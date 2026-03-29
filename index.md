@@ -12,14 +12,18 @@ permalink: /
 > 这里记录我在 **开发 / 生活** 方面的内容
 
 ---
-## tech
+## 近期更新
+
+> tips
+>
+> 查看博客可达到 [归档](/archive/) 或 [分类](/classify/)
+
+### tech
 
 {% assign tech_posts = site.posts 
   | where_exp:"post","post.path contains '_posts/tech/'" 
   | sort: "date" 
   | reverse %}
-
-<p>共有 {{ tech_posts | size }} 篇</p>
 
 <ul>
 {% for post in tech_posts limit:2 %}
@@ -35,13 +39,10 @@ permalink: /
 </ul>
 
 
-[查看全部 →](/tech/)
 
 ---
 
 ## note
-
-<p>共有 {{ site.note | size }} 篇</p>
 
 {% assign notes = site.note | sort: "date" | reverse %}
 
@@ -57,8 +58,6 @@ permalink: /
 </li>
 {% endfor %}
 </ul>
-
-[查看全部 →](/note/)
 
 ---
 
