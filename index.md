@@ -34,6 +34,9 @@ permalink: /
     <a href="{{ post.url }}" style="margin-left:6px;">
       {{ post.title }}
     </a>
+    <span>
+      tech
+    </span>
   </li>
 {% endfor %}
 </ul>
@@ -55,6 +58,9 @@ permalink: /
   <a href="{{ post.url }}" style="margin-left:6px;">
     {{ post.title }}
   </a>
+  <span>
+    note
+  </span>
 </li>
 {% endfor %}
 </ul>
