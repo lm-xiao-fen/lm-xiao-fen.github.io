@@ -14,12 +14,6 @@ permalink: /
 ---
 ## 近期更新
 
-> tips
->
-> 查看博客可达到 [归档](/archive/) 或 [分类](/classify/)
-
-### tech
-
 {% assign tech_posts = site.posts 
   | where_exp:"post","post.path contains '_posts/tech/'" 
   | sort: "date" 
@@ -40,12 +34,6 @@ permalink: /
   </li>
 {% endfor %}
 </ul>
-
-
-
----
-
-## note
 
 {% assign notes = site.note | sort: "date" | reverse %}
 
