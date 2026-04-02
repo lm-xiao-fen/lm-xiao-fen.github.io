@@ -137,6 +137,40 @@ code {
   color: #8b949e !important;
 }
 
+/* ===== 表格 ===== */
+
+/* GitHub Dark 表格样式 */
+.markdown-body table,
+table {
+  background-color: #0d1117 !important;
+  border: 1px solid rgba(240, 246, 252, 0.1) !important;
+  border-collapse: collapse !important;
+  border-radius: 6px !important;
+  overflow: hidden !important;
+}
+
+.markdown-body table th,
+.markdown-body table td,
+table th,
+table td {
+  border: 1px solid rgba(240, 246, 252, 0.1) !important;
+  padding: 6px 13px !important;
+  background-color: #0d1117 !important;
+  color: #c9d1d9 !important;
+}
+
+.markdown-body table th,
+table th {
+  background-color: #161b22 !important;
+  font-weight: 600 !important;
+  text-align: left !important;
+}
+
+.markdown-body table tr:hover,
+table tr:hover {
+  background-color: #161b22 !important;
+}
+
 /* ===== 可复制代码块 ===== */
 
 .code-block-container {
