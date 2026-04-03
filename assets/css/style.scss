@@ -1,14 +1,33 @@
+---
+---
+
+@import "{{ site.theme }}";
+
 /* ===== 全局深色模式（Primer Dark 风格） ===== */
 
 body {
   background-color: #0d1117;
   color: #c9d1d9;
+  padding-bottom: 80px; /* 确保内容不被固定footer覆盖 */
 }
 
 /* ===== 布局优化 ===== */
 
 .container-lg {
   max-width: 900px;
+}
+
+/* ===== Footer 固定在底部 ===== */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0d1117;
+  padding: 1rem;
+  z-index: 1000;
+  border-top: 1px solid rgba(240, 246, 252, 0.1);
 }
 
 /* ===== 标题 ===== */
@@ -55,41 +74,13 @@ header,
 .footer {
   background-color: #0d1117;
   color: #8b949e;
-  padding: 10px 20px;
-  font-size: 14px;
-  text-align: center;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* 增强可读性 */
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.footer-left, .footer-center, .footer-right {
-  width: 100%;
-}
-
-.footer-left {
-  text-align: left;
-}
-
-.footer-center {
-  text-align: center;
-}
-
-.footer-right {
-  text-align: right;
 }
 
 /* ===== 卡片（Primer Box） ===== */
 
 .Box {
   background-color: #161b22;
-  border: 1px solid #30363d;
+  border: 1px solid rgba(240, 246, 252, 0.1);
   border-radius: 10px;
 }
 
@@ -104,7 +95,7 @@ li:hover {
 input {
   background-color: #161b22;
   color: #c9d1d9;
-  border: 1px solid #30363d;
+  border: 1px solid rgba(240, 246, 252, 0.1);
   border-radius: 6px;
   padding: 6px;
 }
@@ -119,7 +110,7 @@ code,
 .highlight pre {
   background-color: #0d1117 !important;
   color: #c9d1d9 !important;
-  border: 1px solid #30363d !important;
+  border: 1px solid rgba(240, 246, 252, 0.1) !important;
   border-radius: 6px !important;
 }
 
@@ -160,6 +151,40 @@ code {
   color: #8b949e !important;
 }
 
+/* ===== 表格 ===== */
+
+/* GitHub Dark 表格样式 */
+.markdown-body table,
+table {
+  background-color: #0d1117 !important;
+  border: 1px solid rgba(240, 246, 252, 0.1) !important;
+  border-collapse: collapse !important;
+  border-radius: 6px !important;
+  overflow: hidden !important;
+}
+
+.markdown-body table th,
+.markdown-body table td,
+table th,
+table td {
+  border: 1px solid rgba(240, 246, 252, 0.1) !important;
+  padding: 6px 13px !important;
+  background-color: #0d1117 !important;
+  color: #c9d1d9 !important;
+}
+
+.markdown-body table th,
+table th {
+  background-color: #161b22 !important;
+  font-weight: 600 !important;
+  text-align: left !important;
+}
+
+.markdown-body table tr:hover,
+table tr:hover {
+  background-color: #161b22 !important;
+}
+
 /* ===== 可复制代码块 ===== */
 
 .code-block-container {
@@ -193,7 +218,7 @@ code {
 
 a[style*="background"] {
   background: #21262d !important;
-  border: 1px solid #30363d !important;
+  border: 1px solid rgba(240, 246, 252, 0.1) !important;
   color: #c9d1d9 !important;
   border-radius: 6px;
 }
