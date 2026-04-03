@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% seo %}
+    {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <link rel="icon" type="image/jpeg" href="/image/MEITU_20260128_220225596.jpg">
     {% include head-custom.html %}
@@ -13,22 +13,29 @@
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
       {% if site.title and site.title != page.title %}
-      <h3 id="xf_blog副站友链归档"><a href="/">xf_blog</a>&emsp;<a href="https://mikufans1.dpdns.org">副站</a>&emsp;<a href="/feed-link/">友链</a>&emsp;<a href="/archive/">归档</a>&emsp;<a href="/tag/">标签</a>&emsp;<a href="/classify/">分类</a></h3> 
+        <h3 id="xf_blog副站友链归档"><a href="/">xf_blog</a>&emsp;<a href="https://mikufans1.dpdns.org">副站</a>&emsp;<a href="/feed-link/">友链</a>&emsp;<a href="/archive/">归档</a>&emsp;<a href="/tag/">标签</a>&emsp;<a href="/classify/">分类</a></h3> 
       {% endif %}
 
       <hr>
-      
+
       {{ content }}
 
     </div>
 
     {% if site.github.private != true and site.github.license %}
-    <div class="footer border-top border-gray-light mt-5 pt-3 text-gray" style="display:flex; justify-content:space-between; align-items:center;">
-        <div><a href="https://mikufans.qzz.io">VICP-T6JGPJNE</a></div>
-        <div>© 2025 - {{ "now" | date: "%Y" }} lm-xiao-fen</div>
-        <div>本站<a href="https://github.com/lm-xiao-fen/lm-xiao-fen.github.io">源代码</a>以MIT在GitHub开源</div>
-    </div>
-      {% endif %}
+      <div class="footer border-top border-gray-light mt-5 pt-3 text-gray">
+        <div class="footer-left">
+          <a href="https://mikufans.qzz.io">VICP-T6JGPJNE</a>
+        </div>
+        <div class="footer-center">
+          © 2025 - {{ "now" | date: "%Y" }} lm-xiao-fen
+        </div>
+        <div class="footer-right">
+          文章内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 协议，源码遵循 <a href="https://opensource.org/licenses/MIT">MIT</a> 协议
+        </div>
+      </div>
+    {% endif %}
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
     <script>anchors.add();</script>
     <script>
@@ -39,7 +46,7 @@
           container.className = 'code-block-container';
           pre.parentNode.insertBefore(container, pre);
           container.appendChild(pre);
-          
+
           const button = document.createElement('button');
           button.className = 'copy-button';
           button.textContent = '复制';
@@ -59,4 +66,4 @@
       });
     </script>
   </body>
-      </html>
+</html>
