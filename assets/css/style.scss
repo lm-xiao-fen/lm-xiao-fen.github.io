@@ -30,6 +30,27 @@ body {
   border-top: 1px solid rgba(240, 246, 252, 0.1);
 }
 
+/* ===== 移动端 Footer 优化 ===== */
+
+@media (max-width: 768px) {
+  .footer {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 0.5rem !important;
+  }
+
+  .footer div {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .footer div:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
 /* ===== 标题 ===== */
 
 h1, h2, h3, h4 {
