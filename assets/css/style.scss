@@ -27,7 +27,7 @@ body {
   background-color: #0d1117;
   padding: 1rem;
   z-index: 1000;
-  border-top: 1px solid rgba(240, 246, 252, 0.1);
+  border-top: 1px solid rgba(148, 163, 184, 0.2);
 }
 
 /* ===== 移动端 Footer 优化 ===== */
@@ -80,13 +80,13 @@ a:hover {
 .border-top,
 .border-bottom,
 .border-gray-light {
-  border-color: rgba(240, 246, 252, 0.1) !important;
+  border-color: rgba(148, 163, 184, 0.2) !important;
 }
 
 /* 分割线 */
 hr {
   border: none;
-  border-top: 1px solid rgba(240, 246, 252, 0.1);
+  border-top: 1px solid rgba(148, 163, 184, 0.2);
 }
 
 /* ===== header / footer ===== */
@@ -101,7 +101,7 @@ header,
 
 .Box {
   background-color: #161b22;
-  border: 1px solid rgba(240, 246, 252, 0.1);
+  border: 1px solid rgba(148, 163, 184, 0.2);
   border-radius: 10px;
 }
 
@@ -116,7 +116,7 @@ li:hover {
 input {
   background-color: #161b22;
   color: #c9d1d9;
-  border: 1px solid rgba(240, 246, 252, 0.1);
+  border: 1px solid rgba(148, 163, 184, 0.2);
   border-radius: 6px;
   padding: 6px;
 }
@@ -131,7 +131,7 @@ code,
 .highlight pre {
   background-color: #0d1117 !important;
   color: #c9d1d9 !important;
-  border: 1px solid rgba(240, 246, 252, 0.1) !important;
+  border: 1px solid rgba(148, 163, 184, 0.2) !important;
   border-radius: 6px !important;
 }
 
@@ -178,7 +178,7 @@ code {
 .markdown-body table,
 table {
   background-color: #0d1117 !important;
-  border: 1px solid rgba(240, 246, 252, 0.1) !important;
+  border: 1px solid rgba(148, 163, 184, 0.2) !important;
   border-collapse: collapse !important;
   border-radius: 6px !important;
   overflow: hidden !important;
@@ -188,7 +188,7 @@ table {
 .markdown-body table td,
 table th,
 table td {
-  border: 1px solid rgba(240, 246, 252, 0.1) !important;
+  border: 1px solid rgba(148, 163, 184, 0.2) !important;
   padding: 6px 13px !important;
   background-color: #0d1117 !important;
   color: #c9d1d9 !important;
@@ -239,7 +239,7 @@ table tr:hover {
 
 a[style*="background"] {
   background: #21262d !important;
-  border: 1px solid rgba(240, 246, 252, 0.1) !important;
+  border: 1px solid rgba(148, 163, 184, 0.2) !important;
   color: #c9d1d9 !important;
   border-radius: 6px;
 }
