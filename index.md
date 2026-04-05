@@ -71,23 +71,24 @@ permalink: /
 {% assign sorted_tags = tags | uniq | sort %}
 
 <div class="related-posts">
-  <h3>相关的文章</h3>
+  <h3>相关文章</h3>
   <ul>
-    {% assign current_tags = page.tags %}
-    
-    {% assign related_posts = site.posts | where: "tags", current_tags %}
-    {% assign related_notes = site.note | where: "tags", current_tags %}
 
-    {% assign all_related_posts = related_posts | concat: related_notes %}
-    {% assign unique_related_posts = all_related_posts | uniq %}
+    {% assign all = site.posts | concat: site.note %}
 
-    {% for related_post in unique_related_posts %}
-      {% if related_post.url != page.url %}
-        <li>
-          <a href="{{ related_post.url }}">{{ related_post.title }}</a>
-        </li>
+    {% for post in all %}
+      {% if post.url != page.url %}
+        {% for tag in page.tags %}
+          {% if post.tags contains tag %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% break %}
+          {% endif %}
+        {% endfor %}
       {% endif %}
     {% endfor %}
+
   </ul>
 </div>
 
