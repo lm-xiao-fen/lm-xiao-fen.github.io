@@ -8,7 +8,7 @@ permalink: /note/
 共有 {{ site.note | size }} 文章
 
 <ul>
-{% for post in notes limit: %}
+{% for post in site.note limit: %}
  <li style="margin-bottom:6px;">
   <span style="color:#8b949e; font-size:13px;">
     {{ post.date | date: "%Y-%m-%d" }}
