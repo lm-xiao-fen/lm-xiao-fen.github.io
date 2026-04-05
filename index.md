@@ -70,13 +70,25 @@ permalink: /
 
 {% assign sorted_tags = tags | uniq | sort %}
 
-<div style="margin-bottom:20px;">
-{% for tag in sorted_tags limit:5 %}
-  <a href="/tag/#{{ tag }}" 
-     style="margin-right:10px;padding:4px 8px;background:#f2f2f2;border-radius:5px;">
-     #{{ tag }}
-  </a>
-{% endfor %}
+<div class="related-posts">
+  <h3>相关的文章</h3>
+  <ul>
+    {% assign current_tags = page.tags %}
+    
+    {% assign related_posts = site.posts | where: "tags", current_tags %}
+    {% assign related_notes = site.note | where: "tags", current_tags %}
+
+    {% assign all_related_posts = related_posts | concat: related_notes %}
+    {% assign unique_related_posts = all_related_posts | uniq %}
+
+    {% for related_post in unique_related_posts %}
+      {% if related_post.url != page.url %}
+        <li>
+          <a href="{{ related_post.url }}">{{ related_post.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 </div>
 
 ## 社交的
