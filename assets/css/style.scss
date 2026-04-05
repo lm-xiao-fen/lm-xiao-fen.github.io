@@ -8,7 +8,7 @@
 body {
   background-color: #0d1117;
   color: #c9d1d9;
-  padding-bottom: 80px; /* 确保内容不被固定footer覆盖 */
+  padding-bottom: 120px; /* 确保内容不被固定footer覆盖 */
 }
 
 /* ===== 布局优化 ===== */
@@ -33,6 +33,10 @@ body {
 /* ===== 移动端 Footer 优化 ===== */
 
 @media (max-width: 768px) {
+  body {
+    padding-bottom: 180px; /* 移动端footer垂直布局需要更多空间 */
+  }
+
   .footer {
     display: flex !important;
     flex-direction: column !important;
