@@ -70,25 +70,6 @@ permalink: /
 
 {% assign sorted_tags = tags | uniq | sort %}
 
-<div class="related-posts">
-  <h3>相关文章</h3>
-  <ul>
-
-    {% assign all = site.posts | concat: site.note %}
-
-    {% for post in all %}
-      {% if post.url != page.url %}
-        {% for tag in page.tags %}
-          {% if post.tags contains tag %}
-            <li>
-              <a href="{{ post.url }}">{{ post.title }}</a>
-            </li>
-            {% break %}
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-    {% endfor %}
-
   </ul>
 </div>
 
