@@ -28,6 +28,10 @@ body {
   padding: 1rem;
   z-index: 1000;
   border-top: 1px solid rgba(148, 163, 184, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* 控制元素间距 */
 }
 
 /* ===== 移动端 Footer 优化 ===== */
