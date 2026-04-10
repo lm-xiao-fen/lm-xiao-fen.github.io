@@ -1,13 +1,15 @@
 ---
 layout: default
 ---
-<div>
+时间：{{ page.date | date: "%Y-%m-%d" }}
+
+标签：
+{% for tag in page.tags %}
+  <a href="/tags/{{ tag | slugify }}/">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
+{% endfor %}
 
 {{ content }}
 
-</div>
-
-<hr>
 
 <hr>
 
