@@ -55,6 +55,11 @@ permalink: /feed-link/
 
 *循此苦旅，以达星辰*
 
+<img src="https://llds.cloud/lsang.png" alt="LsAng的头像" width="32" height="32">
+[LsAng](https://llds.cloud)
+
+*学习、探索中*
+
 ---
 
 ### 留言墙
