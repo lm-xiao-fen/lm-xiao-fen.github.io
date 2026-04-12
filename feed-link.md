@@ -18,7 +18,7 @@ permalink: /feed-link/
 
 <br>
 
-<img src="https://cdn.luogu.com.cn/upload/image_hosting/dhkeh5o3.png" alt="ccw_china的博客的头像" width="32" height="32">
+<img src="https://ccwchina.gt.tc/image.png" alt="ccw_china的博客的头像" width="32" height="32">
 [ccw_china的博客](https://ccwchina.gt.tc)
 
 *爱编程的初中生，热爱生活，热爱编程*

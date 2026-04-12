@@ -82,3 +82,6 @@ permalink: /
 ## 社交的
 
 [bilibili](https://space.bilibili.com/3494372658121066)&ensp;[Email](mailto:G114514g@yeah.net)&ensp;[YouTube](https://youtube.com/@lm-xiao-fen)&ensp;[rss](/feed.xml)
+
+## 全站访问量
+![全站访问量的图片](https://count.getloli.com/@xf_blog?name=xf_blog&theme=miku&padding=10&offset=0&align=top&scale=1&pixelated=1&darkmode=1)
