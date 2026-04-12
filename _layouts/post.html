@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+<h1>{{ page.title }}</h1>
+
+
 时间：{{ page.date | date: "%Y-%m-%d" }}&emsp;&emsp;&emsp;标签：
 {% for tag in page.tags %}
   <a href="/tag/#{{ tag | slugify }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
