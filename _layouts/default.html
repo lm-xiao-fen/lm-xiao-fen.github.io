@@ -22,6 +22,14 @@
 
     </div>
 
+    ...
+      {% unless page.url == "/" %}
+    <img src="https://count.getloli.com/@xf_blog?name=xf_blog&theme=miku&padding=10&offset=0&align=top&scale=1&pixelated=1&darkmode=1"
+         alt=""
+         style="display:none;width:0;height:0;visibility:hidden;" />
+      {% endunless %}
+
+
     {% if site.github.private != true and site.github.license %}
     <div class="footer border-top border-gray-light mt-5 pt-3 text-gray" style="display:flex; justify-content:space-between; align-items:center;">
         <div><a href="https://mikufans.qzz.io">VICP-T6JGPJNE</a></div>
