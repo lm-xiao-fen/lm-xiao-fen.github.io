@@ -51,6 +51,22 @@ body {
   }
 }
 
+/* ===== PC端 Footer 优化 ===== */
+
+@media (min-width: 769px) {
+  .footer {
+    justify-content: space-around !important;
+  }
+}
+
+/* ===== PC端 Footer 优化 ===== */
+
+@media (min-width: 769px) {
+  .footer {
+    justify-content: space-around !important;
+  }
+}
+
 /* ===== 标题 ===== */
 
 h1, h2, h3, h4 {
