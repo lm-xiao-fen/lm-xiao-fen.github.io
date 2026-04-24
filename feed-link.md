@@ -62,6 +62,13 @@ permalink: /feed-link/
 
 *学习、探索中*
 
+<br>
+
+<img src="https://camo.githubusercontent.com/62f62a57d3543c5162d758db294b534e93c8401d33590decdaf32ff8cfb3954a/68747470733a2f2f74632e6c7161792e636e2f4c69676874506963747572652f323032362f30332f356636346530663066333631653139632e706e67" alt="流欺の个人博客的头像" width="32" height="32">
+
+[流欺の个人博客](https://blog.lqay.cn)
+*嗯对就是个博客*
+
 ---
 
 ## 友链申请
@@ -69,10 +76,12 @@ permalink: /feed-link/
 - 请想申请友链的站长按照一下格式，将模板中的内容改成自己网站的信息
 
 ```markdown
+```markdown
 <img src="https://github.com/lm-xiao-fen/lm-xiao-fen.github.io/blob/main/image/MEITU_20260128_220225596.jpg?raw=true" alt="xf_blog的头像" width="32" height="32">
 [xf_blog](https://lm-xiao-fen.github.io)
 
 *立志用 cloudflare workers，GitHub pages 和 vercel 做出整个互联网的up（虽然不会成功*
+```
 ```
 
 ## 本站信息
