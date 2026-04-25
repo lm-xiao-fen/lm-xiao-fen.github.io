@@ -4,70 +4,18 @@ title: 友链
 permalink: /feed-link/
 ---
 
-<img src="https://q2.qlogo.cn/headimg_dl?dst_uin=2726730791&spec=0" alt="二叉树树博客的头像" width="32" height="32">
-[二叉树树](https://2x.nz)
+{% for link in site.data.feed-link %}
+<img src="{{ link.avatar }}" alt="{{ link.name }}的头像" width="32" height="32">
+[{{ link.name }}]({{ link.url }})
 
-*Protect What You Love.*
+*{{ link.desc }}*
 
-<br>
-
-<img src="https://www.xhehm.com/favicon.png" alt="星河hmの小窝的头像" width="32" height="32">
-[星河hmの小窝](https://xhehm.com)
-
-*人生是開發，不是預設*
+{% if link.note %}
+**{{ link.note }}**
+{% endif %}
 
 <br>
-
-<img src="https://ccwchina.gt.tc/image.png" alt="ccw_china的博客的头像" width="32" height="32">
-[ccw_china的博客](https://ccwchina.gt.tc)
-
-*爱编程的初中生，热爱生活，热爱编程*
-
-<br>
-
-<img src="https://r2.gh-proxy.com/GitHub-Mark-ea2971cee799.png" alt="GitHub加速下载代理的头像" width="32" height="32">
-[GitHub加速下载代理](https://gh-proxy.com)
-
-*支持API、Git Clone、Releases、Archive、Gist、Raw 文件代理加速下载服务*
-
-<br>
-
-<img src="https://docs.github.com/assets/cb-345/images/site/favicon.png" alt="GitHub pages的头像" width="32" height="32">
-[GitHub pages](https://docs.github.com/en/pages)
-
-*GitHub Pages turns any GitHub repository into a live website—no separate hosting required.*
-
-**本站的主线路（GitHub pages 线路）的访问由 GitHub pages 全权负责**
-
-<br>
-
-<img src="https://github.com/fluidicon.png" alt="GitHub的头像" width="32" height="32">
-[GitHub](https://github.com)
-
-*Accelerate human progress through developer collaboration*
-
-**本网站的 Jekyll 代码和 HTML 代码由 GitHub 免费托管**
-
-<br>
-
-<img src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" alt="GitHub的头像" width="32" height="32">
-[Wcowin's Blog](https://wcowin.work)
-
-*循此苦旅，以达星辰*
-
-<br>
-
-<img src="https://llds.cloud/lsang.png" alt="LsAng的头像" width="32" height="32">
-[LsAng](https://llds.cloud)
-
-*学习、探索中*
-
-<br>
-
-<img src="https://camo.githubusercontent.com/62f62a57d3543c5162d758db294b534e93c8401d33590decdaf32ff8cfb3954a/68747470733a2f2f74632e6c7161792e636e2f4c69676874506963747572652f323032362f30332f356636346530663066333631653139632e706e67" alt="流欺の个人博客的头像" width="32" height="32">
-
-[流欺の个人博客](https://blog.lqay.cn)
-*嗯对就是个博客*
+{% endfor %}
 
 ---
 
@@ -76,12 +24,10 @@ permalink: /feed-link/
 - 请想申请友链的站长按照一下格式，将模板中的内容改成自己网站的信息
 
 ```markdown
-```markdown
-<img src="https://github.com/lm-xiao-fen/lm-xiao-fen.github.io/blob/main/image/MEITU_20260128_220225596.jpg?raw=true" alt="xf_blog的头像" width="32" height="32">
-[xf_blog](https://lm-xiao-fen.github.io)
-
-*立志用 cloudflare workers，GitHub pages 和 vercel 做出整个互联网的up（虽然不会成功*
-```
+- name: xf_blog
+  url: https://lm-xiao-fen.github.io
+  avatar: https://github.com/lm-xiao-fen/lm-xiao-fen.github.io/blob/main/image/MEITU_20260128_220225596.jpg?raw=true
+  desc: 立志用 cloudflare workers，GitHub pages 和 vercel 做出整个互联网的up（虽然不会成功
 ```
 
 ## 本站信息
