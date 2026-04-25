@@ -45,13 +45,13 @@
       const PLAYER_ID = '17924201032';
       const PLAYER_SRC = `//music.163.com/outchain/player?type=0&id=${PLAYER_ID}&auto=1&height=430`;
       const container = document.getElementById('global-music-player-container');
+      const wrapper = document.getElementById('music-player-wrapper');
       let lastActive = Date.now();
       let hideTimeout = null;
 
-      // 只插入一次 iframe
+      // 静态插入 iframe
       function ensurePlayer() {
         if (!document.getElementById('music-player-iframe')) {
-          const wrapper = document.getElementById('music-player-wrapper');
           const iframe = document.createElement('iframe');
           iframe.id = 'music-player-iframe';
           iframe.frameBorder = 'no';
@@ -91,7 +91,7 @@
         hideTimeout = setTimeout(() => {
           container.classList.add('hide-player');
           document.getElementById('music-player-arrow').style.display = 'flex';
-        }, 60000); // 1分钟
+        }, 10000); // 10s无操作后隐藏
       }
 
       // 监听交互
@@ -133,9 +133,10 @@
       }
     })();
     </script>
-      <!-- 全局音乐播放器容器 -->
-      <div id="global-music-player-container"></div>
-      {% include nusic.html %}
+      <!-- 全局音乐播放器容器和 wrapper 静态插入 -->
+      <div id="global-music-player-container">
+        <div id="music-player-wrapper"></div>
+      </div>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const codeBlocks = document.querySelectorAll('pre');
