@@ -7,6 +7,8 @@ permalink: /note/
 # 随记
 共有 {{ site.note | size }} 文章
 
+{% assign notes = site.note | sort: "date" | reverse %}
+
 <ul>
 {% for post in site.note limit: %}
  <li style="margin-bottom:6px;">
