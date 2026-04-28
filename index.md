@@ -14,13 +14,8 @@ permalink: /
 ---
 ## 近期更新
 
-{% assign tech_posts = site.posts 
-  | where_exp:"post","post.path contains '_posts/tech/'" 
-  | sort: "date" 
-  | reverse %}
-
 <ul>
-{% for post in tech_posts limit:2 %}
+{% for post in site.posts limit:2 %}
   <li style="margin-bottom:6px;">
     <span style="color:#8b949e; font-size:13px;">
       {{ post.date | date: "%Y-%m-%d" }}
