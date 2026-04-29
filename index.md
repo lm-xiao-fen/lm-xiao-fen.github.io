@@ -69,7 +69,7 @@ permalink: /
 {% for tag in sorted_tags limit:5 %}
   <a href="/tag/#{{ tag }}" 
      style="margin-right:10px;padding:4px 8px;background:#f2f2f2;border-radius:5px;">
-     #{{ tag }}
+     {{ tag }}
   </a>
 {% endfor %}
 </div>
