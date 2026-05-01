@@ -18,17 +18,11 @@
   avatar: https://r2.gh-proxy.com/GitHub-Mark-ea2971cee799.png
   desc: 支持API、Git Clone、Releases、Archive、Gist、Raw 文件代理加速下载服务
 
-- name: GitHub pages
-  url: https://docs.github.com/en/pages
-  avatar: https://docs.github.com/assets/cb-345/images/site/favicon.png
-  desc: GitHub Pages turns any GitHub repository into a live website—no separate hosting required.
-  note: 本站的主线路（GitHub pages 线路）的访问由 GitHub pages 全权负责
-
 - name: GitHub
   url: https://github.com
   avatar: https://github.com/fluidicon.png
-  desc: Accelerate human progress through developer collaboration
-  note: 本网站的 Jekyll 代码和 HTML 代码由 GitHub 免费托管
+  desc: The future of building happens together
+  note: 本网站的 Jekyll 代码和 HTML 代码由 GitHub 免费托管，并负责提供访问服务（GitHub pages 线路）
 
 - name: Wcowin's Blog
   url: https://wcowin.work
