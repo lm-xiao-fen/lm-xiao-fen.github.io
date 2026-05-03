@@ -10,9 +10,9 @@
 ###### 好中二啊
 
 ## 怎么使用
-在 **_posts/tech** 和 **_note** 下新建格式为 **YYYY-MM-DD-title.md** 的文件
+在 **_posts** 和 **_note** 下新建格式为 **YYYY-MM-DD-title.md** 的文件
 
-在 **_posts/tech** 和 **_note** 下的文件内容开头必须有下面这段内容
+在 **_posts** 和 **_note** 下的文件内容开头必须有下面这段内容
 
 ```yaml
 ---
@@ -31,7 +31,7 @@ tags: [tag, tags] # 标签，可以给你的文章家点标签，记住标签之
 但我可以给你一个思路
 
 ### 文章
-进入 **_posts/tech** 和 **_note** ， 将文件里面的文件全部删除
+进入 **_posts** 和 **_note** ， 将文件里面的文件全部删除
 
 ### 布局
 我自己定制了 **_layouts** 文件夹下的 **default.html** **page.html** **post.html**，你需要自己修改

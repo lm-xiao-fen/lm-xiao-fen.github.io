@@ -3,7 +3,7 @@ layout: null
 permalink: /feed.xml
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-{% assign tech_posts = site.posts | where_exp:"post","post.path contains '_posts/tech/'" %}
+{% assign tech_posts = site.posts | where_exp:"post","post.path contains '_posts/'" %}
 {% assign note_posts = site.note | sort: "date" | reverse %}
 {% assign all_posts = tech_posts | concat: note_posts | sort: "date" | reverse %}
 <rss version="2.0">

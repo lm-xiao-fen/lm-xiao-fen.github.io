@@ -9,7 +9,7 @@ permalink: /archive/
 <input id="searchInput" type="text" placeholder="搜索文章..." 
 style="width:100%;padding:8px;margin-bottom:20px;">
 
-{% assign tech_posts = site.posts | where_exp:"post","post.path contains '_posts/tech/'" %}
+{% assign tech_posts = site.posts | where_exp:"post","post.path contains '_posts/'" %}
 {% assign all_posts = tech_posts | concat: site.note | sort:"date" | reverse %}
 
 {% assign months = all_posts | group_by_exp:"post","post.date | date: '%Y-%m'" %}

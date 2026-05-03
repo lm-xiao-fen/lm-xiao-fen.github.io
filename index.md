@@ -52,7 +52,7 @@ permalink: /
 
 ## 热门标签
 
-{% assign tech_posts = site.posts | where_exp:"post","post.path contains '_posts/tech/'" %}
+{% assign tech_posts = site.posts | where_exp:"post","post.path contains '_posts/'" %}
 {% assign all_posts = tech_posts | concat: site.note %}
 
 {% assign tags = "" | split: "" %}
